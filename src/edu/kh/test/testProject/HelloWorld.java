@@ -34,5 +34,7 @@ public class HelloWorld {
 		// notice!
 		// 자바는 사칙연산의 우선수위를 그대로 따른다.
 		// ex) 우선계산을 원하면 () 사용
+		
+		System.out.println("안녕? 날 보고있니?");
 	}
 }
