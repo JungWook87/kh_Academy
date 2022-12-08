@@ -61,5 +61,8 @@ public class OperatorPractice {
 		
 		System.out.println("합계 : " + total);
 		System.out.println("평균 : " + avg);
+		
+		String pass = (kor>=40 && eng>=40 && math>=40 && avg>=60)? "합격" : "불합격";
+		System.out.println(pass);
 	}
 }
