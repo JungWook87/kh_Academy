@@ -52,14 +52,14 @@ public class OperatorPractice {
 		int eng = sc.nextInt();
 		
 		System.out.print("수학 : ");
-		int mat = sc.nextInt();
+		int math = sc.nextInt();
 		
 		System.out.println();
 		
-		int total = kor + eng + mat;
-		double ever = (kor + eng + mat)/3.0;
+		int total = kor + eng + math;
+		double avg = total/3.0;
 		
 		System.out.println("합계 : " + total);
-		System.out.println("평균 : " + ever);
+		System.out.println("평균 : " + avg);
 	}
 }

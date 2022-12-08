@@ -7,7 +7,7 @@ public class PracticeRun {
 		OperatorPractice start = new OperatorPractice();
 		
 		//start.practice1();
-		start.practice2();
-		//start.practice3();
+		//start.practice2();
+		start.practice3();
 	}
 }
