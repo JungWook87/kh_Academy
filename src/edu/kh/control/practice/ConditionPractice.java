@@ -98,7 +98,7 @@ public class ConditionPractice {
 		double mid100 = mid * (20.0/100.0); // 중간 고사 백분율
 		
 		System.out.print("기말 고사 점수 : ");
-		int fin = sc.nextInt(); // 기말 고사 점수
+		int fin = sc.nextInt(); 
 		double fin100 = fin * (30.0/100.0);
 		
 		System.out.print("과제 점수 : ");
