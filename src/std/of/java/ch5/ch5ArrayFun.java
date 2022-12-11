@@ -7,8 +7,11 @@ public class ch5ArrayFun {
 		
 		//fn.ex1();
 		//fn.ex2();
-		fn.ex4();
+		//fn.ex11();
+
+		ch5StringArray str = new ch5StringArray();
 		
+		str.ex2();
 	}
 
 }
