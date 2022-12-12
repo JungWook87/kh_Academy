@@ -11,7 +11,11 @@ public class ch5ArrayFun {
 
 		ch5StringArray str = new ch5StringArray();
 		
-		str.ex2();
+		//str.ex2();
+		
+		ch5MultiArray st = new ch5MultiArray();
+		
+		st.ex1();
 	}
 
 }
