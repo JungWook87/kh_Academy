@@ -1,5 +1,6 @@
 package edu.kh.array.ex;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayExample1 {
@@ -111,5 +112,141 @@ public class ArrayExample1 {
 		System.out.println("입력 받은 키 : " + input);
 		System.out.println("평균 : " + avg + "Cm");
 		
+	}
+
+	public void ex4() {
+		// 입력 받은 인원 수 만큼의 점수를 입력 받아 배열에 저장
+		// 입력이 완료되면 정수 합계, 평균, 최고점, 최저점 출력
+		
+		// ex)
+		// 입력 받을 인원 수 : 4
+		// 1번 점수 입력 : 100
+		// 2번 점수 입력 : 80
+		// 3번 점수 입력 : 50
+		// 4번 점수 입력 : 60
+		
+		// 합계 : 
+		// 평균 : 소두 둘째자리까지
+		// 최고점 : 
+		// 최저점 : 
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("입력 받을 인원 수 : ");
+		int input = sc.nextInt();
+		
+		int[] score = new int[input];
+		
+		int sum = 0;
+		int max = 0;
+		int min = 100;
+		
+		for(int i = 0; i < score.length; i++) {
+			System.out.printf("%d번 점수 입력 : ", i + 1);
+			score[i] = sc.nextInt();
+			
+			sum += score[i];
+			max = Math.max(score[i], max);
+			min = Math.min(score[i], min);
+		}
+		
+		double avg = (double)sum / score.length;
+		
+		System.out.println();
+		System.out.println("합계 : " + sum);
+		System.out.printf("평균 : %.2f\n", avg);
+		System.out.println("최고점 : " + max);
+		System.out.println("최저점 : " + min);
+		
+		
+	}
+
+	public void ex5() {
+
+		char[] arr = new char[5];
+		
+		// char[] arr 이 참조하는 배열 요소에 A, B, C, D, E 대입하기
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = (char)('A' + i);
+			//System.out.printf("arr[%d] : %c\n", i, arr[i]);
+		}
+		System.out.println(Arrays.toString(arr));
+		
+		// ** Arrays 클래스
+		// -> Java에서 제공하는 배열과 관련된 기능을 모아둔 클래스
+		// Arrays.toString(배열명) : 모든 요소 값 출력
+		
+		int[] arr2 = new int[4];
+		System.out.println(Arrays.toString(arr2)); // int의 기본값이 0이므로
+		
+		// 배열 선언과 동시에 초기화
+		char[] arr3 = {'A', 'B', 'C', 'D', 'E'};
+		// char[] 참조 변수 arr3을 선언하고
+		// Heap 영역에 char 5칸짜리 char[]을 생성하고
+		// 각각 'A', 'B', 'C', 'D', 'E' 로 초기화 후 주소를 arr3에 대입
+		
+		System.out.println(Arrays.toString(arr3));
+
+	}
+
+	public void ex6() {
+		// 배열을 이용한 검색
+		
+		// 입력받은 정수가 배열에 있는지 없는지 확인
+		// 만약 있다면 몇번 인덱스에 존재하는지 출력
+		
+		int[] arr = {100,200,300,400,500,600,700,800,900,1000};
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		// 신호를 나타내기 위한 변수
+		// flag == false : 일치하는 값이 존재하지 않음
+		// flag == true : 일치하는 값이 존재
+		
+		boolean flag = false; // 검사 전에는 없다고 가정
+		
+		// arr 배열 요소 순차 접근
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] == input) {
+				System.out.println(i + "번째 인덱스에 존재");
+				
+				flag = true; // 일치하는 값이 있으므로 true로 변경
+			}
+		}
+		
+		if(!flag) { // flag가 true 였다면 false로 바뀌고 if절을 수행하지 않음.
+					//반대로 false였다면 true로 바뀌며 if절 수행함
+			System.out.println("존재하지 않음");
+		}
+	}
+
+	public void ex7() {
+		// 입력 받은 값과 일치 값이 있으면 인덱스 번호 출력
+		// 없으면 "존재하지 않음"
+		String[] arr = {"사과", "딸기", "바나나", "키위", "멜론", "아보카도"};
+		// equals() -> 배열명[i].equals(비교할 값)
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("과일 입력 : ");
+		String input = sc.next();
+		
+		boolean flag = false;
+		
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i].equals(input)) {		// string에서 즉, 참조형에서 비교 할 때 == 는 같은 주소값을 보고 있지 않기 때문에
+											// 일치하지 않는다고 나옴. 동명이인. 그러므로 순수 데이터 값을 비교하는 equals를 써줌
+				System.out.println(input + "은 인덱스 " + i + "번에 있습니다.");
+
+				flag = true;
+			} 
+		}
+		if(!flag) {
+			System.out.println("존재하지 않음");
+		}
 	}
 }
