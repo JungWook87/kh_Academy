@@ -9,6 +9,11 @@ public class ArrayExample1 {
 	 *  - 같은 자료형의 변수를 하나의 묶음으로 다루는 것(자료구조)
 	 *  - 묶여진 변수들은 하나의 배열명으로 불려지고 구분은 index를 이용함
 	 *   (index는 0부터 시작하는 정수)
+	 *   
+	 * 배열의 특징
+	 * 1) 한 가지 자료형만 저장 가능
+	 * 2) 여러값 저장 가능
+	 * 3) 한 번 크기를 지정하면 변경 불가능
 	 *	   
 	 */
 	
@@ -247,6 +252,78 @@ public class ArrayExample1 {
 		}
 		if(!flag) {
 			System.out.println("존재하지 않음");
+		}
+	}
+
+	public void ex8() {
+		/* 1. 문자열을 입력 받아 한 글짜씩 잘라내어 char 배열에 순서대로 저장
+		 * 2. 문자 하나를 입력 받아 일치하는 문자가 char 배열에 몇개 존재하는지 확인
+		 * 3. 단, 일치하는 문자가 없을 경우 "존재하지 않습니다." 출력
+		 * 
+		 * [사용 해야되는 기술, 기능]
+		 * 1) 배열 검색
+		 * 2) String.length() : 문자열 길이
+		 * 		ex) "Hello".length() -> 5
+		 * 3) String.charAt(index) : 문자열에서 특정 index에 위치한 문자 하나를 얻어옴
+		 * 		ex) "Hello".charAt(1) - > 'e'
+		 * 4) count (숫자세기)
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		
+		/*System.out.print("문자열 입력 : ");
+		String input = sc.nextLine();
+		
+		char[] chArr = input.toCharArray();
+		
+		int cnt = 0;
+		
+		System.out.print("문자 입력 : ");
+		String str = sc.nextLine();
+		int ch = str.charAt(0);
+		
+		boolean flag = false;
+				
+		for(int i = 0; i < chArr.length; i++) {
+			if(chArr[i] == ch ) {
+				cnt ++;
+				
+				flag = true;
+			}
+		}
+		if(!flag) {
+			System.out.println("존재하지 않습니다.");
+		} else {
+			System.out.println(cnt);
+		}*/
+		
+		System.out.print("문자열 입력 : ");
+		String input = sc.nextLine();
+		
+		char[] chArr = new char[input.length()];
+		
+		for(int i = 0; i < input.length(); i++) {
+			chArr[i] = input.charAt(i);
+		}
+		
+		System.out.print("검색할 문자 입력 : ");
+		String str = sc.nextLine();			//char ch  = sc.nextLine().charAt(0);
+		char ch = str.charAt(0);
+		
+		int cnt = 0;
+		
+		boolean flag = false;
+		
+		for(int i = 0; i < chArr.length; i++) {
+			if(chArr[i] == ch) {
+				cnt++;
+				flag = true;
+			}
+		}
+		if(!flag) {
+			System.out.println("존재하지 않습니다.");
+		} else {
+			System.out.println(cnt + "개 있음");
 		}
 	}
 }
