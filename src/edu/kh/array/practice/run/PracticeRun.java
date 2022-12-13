@@ -6,6 +6,6 @@ public class PracticeRun {
 		
 		PracticeService start = new PracticeService();
 		
-		start.practice5();
+		start.practice14();
 	}
 }

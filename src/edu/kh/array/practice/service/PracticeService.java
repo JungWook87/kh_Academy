@@ -299,14 +299,135 @@ public class PracticeService {
 		// 랜덤값 입력
 		
 		int[] ball = new int[45];
+		int[] lotto = new int[6];
 		
-		for(int i = 0; i < ball.length; i++) {
+		for(int i = 0; i < ball.length; i++) {			// 공 45개에 1 ~ 45까지 초기화
 			ball[i] = i + 1;
-			for(int j = 0)
-			
-			int x = (int)(Math.random() * 45 + 1);
-			int tmp = ball[0];
-			
 		}
+		
+		for(int i = 0; i < 6; i++) {					// 인덱스 값을 랜덤으로 하여 섞기
+			
+			int x = (int)(Math.random() * 45);
+			
+			int temp = ball[i];
+			ball[i] = ball[x];
+			ball[x] = temp;
+		}
+		
+		for(int i = 0; i < lotto.length; i++) {			// 공 0~5까지를 로또에 복사하고, 오름차순 정렬
+			lotto[i] = ball[i];
+			if(i == 5) {
+				Arrays.sort(lotto);
+			}
+		}
+		
+		String str = "";								// 출력
+		for(int i = 0; i < lotto.length; i++) {
+			str += lotto[i] + " ";
+		}
+		
+		System.out.println(str);
+		
+	}
+
+	public void practice13() {
+
+		System.out.print("문자열 : ");
+		String input = sc.nextLine();
+		
+		char[] ch = input.toCharArray();		// 문자열 문자형 배열화
+		
+		int cnt = 0;					
+		
+		for(int i = 0; i < ch.length; i++) {	// 중복 값 공백으로 변환	
+			for(int j = 0; j < i; j++) {
+				if(ch[i] == ch[j]) {
+					ch[i] = ' ';
+				}
+			}
+		}
+		
+		for(int i = 0; i < ch.length; i++) {	// 공백 갯수 카운트
+			if(ch[i] == ' ') {
+				cnt++;
+			}
+		}
+		
+		char[] res = new char[ch.length-cnt];	// 새로운 배열 선언 및 ch배열에서 공백 갯수 뺀만큼 할당
+		int num = 0;
+		
+		for(int i = 0; i < ch.length; i++) {	// 새로운 배열을 ch 값으로 초기화
+			if(ch[i] == ' ') {
+				continue;
+			} else {
+				res[num] = ch[i];
+				num++;
+			}
+		}
+		
+		String str = "";
+		
+		for(int i = 0; i < res.length; i++){	// 출력 정리
+			if(i == res.length-1) {
+				str += res[i];
+			} else {
+				str += res[i] + ", ";
+			}
+		}
+		
+		System.out.println("문자열에 있는 문자 : " + str);
+		System.out.println("문자 개수 : " + res.length);
+	}
+
+	public void practice14() {
+		
+		System.out.print("배열의 크기를 입력하세요 : ");
+		int size = sc.nextInt();
+		sc.nextLine();
+		
+		String[] arr = new String[size];
+		
+		boolean first = true;
+		int num = 1;
+		
+		while(true) {
+			
+			if(first) {
+				for(int i = 0; i < arr.length; i++) {
+					System.out.printf("%d번째 문자열 : ", num);
+					String str = sc.nextLine();
+					arr[i] = str;
+					num++;
+				}
+				first = false;
+			}
+			
+			System.out.print("더 값을 입력하시겠습니까?(Y/N) : ");
+			char more = sc.nextLine().charAt(0);
+			
+			if(more == 'y' || more == 'Y') {
+				System.out.print("더 입력하고 싶은 개수 : ");
+				int input = sc.nextInt();
+				sc.nextLine();
+				
+				String[] newArr = new String[arr.length + input];
+				
+				for(int i = 0; i < newArr.length; i++) {
+					if(i < arr.length) {
+						newArr[i] = arr[i];
+					} else {
+						System.out.printf("%d번째 문자열 : ", num);
+						String str = sc.nextLine();
+						newArr[i] = str;
+						num++;
+					}
+				}
+				arr = newArr;
+				
+			} else {
+				break;
+			}
+		}
+		System.out.println(Arrays.toString(arr));
 	}
 }
