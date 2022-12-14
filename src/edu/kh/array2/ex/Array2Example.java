@@ -71,19 +71,39 @@ public class Array2Example {
 		System.out.println();
 		
 		// 행 별로 합 출력
-		int[] sumRow = new int[arr.length];
-		
-		for(int i= 0; i < arr.length; i++) {
+		for(int row= 0; row < arr.length; row++) {
 			int sum = 0;
 			
-			for(int j = 0; j <arr[i].length; j++) {
-				sumRow[i] += arr[i][j]; 
+			for(int col = 0; col <arr[row].length; col++) {
+				sum += arr[row][col]; 
 			}
+			
+			System.out.printf("%d행의 합 : %d\n", row, sum);
 		}
-		System.out.println(Arrays.toString(sumRow));
 		System.out.println();
 		
 		//열 별로 합 출력
-
+		// -> 열 부터 지정 후 각 행의 값을 누적
+		
+		for(int col = 0; col < arr[0].length; col++) {
+			int sum = 0;
+			
+			for(int row = 0; row < arr.length; row++) {
+				sum += arr[row][col];
+			}
+			
+			System.out.printf("%d열의 합 : %d\n", col, sum);
+		}
+		System.out.println();
+		
+		// 전체 합 출력
+		int sum = 0;
+		
+		for(int row = 0; row < arr.length; row++) {
+			for (int col = 0; col < arr[0].length; col++) {
+				sum += arr[row][col];
+			}
+		}
+		System.out.println("전체 합 : " + sum);
 	}
 }
