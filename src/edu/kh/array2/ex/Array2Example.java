@@ -106,4 +106,27 @@ public class Array2Example {
 		}
 		System.out.println("전체 합 : " + sum);
 	}
+
+	public void ex3() {
+		// 가변 배열
+		// - 2차원 배열 생성 시 마지막 배열 차수(열)를 지정하지 않고
+		// 	 나중에 서로 크기가 다른 1차원 배열을 생성하여 참조하는 배열
+		
+		char[][] arr = new char[4][];
+					// char 2차원 배열 생성 시 행 부분만 작성
+		
+		arr[0] = new char[3];	// 0행에 3열짜리 1차원 배열을 생성하여 주소값 지정
+		arr[1] = new char[4];	// 1행에 4열짜리 1차원 배열을 생성하여 주소값 지정
+		arr[2] = new char[5];	// 2행에 5열짜리 1차원 배열을 생성하여 주소값 지정
+		arr[3] = new char[2];	// 3행에 2열짜리 1차원 배열을 생성하여 주소값 지정
+		
+		char ch = 'a';
+		for (int row = 0; row < arr.length; row++) {
+			
+			for(int col = 0; col < arr[row].length; col++) {
+				arr[row][col] = ch++;
+			}
+		}
+		System.out.println(Arrays.deepToString(arr));
+	}
 }
