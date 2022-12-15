@@ -8,7 +8,7 @@ public class ClsRun {
 		
 		ClsService start = new ClsService();
 		
-		start.ex2();
+		start.ex3();
 	}
 
 }
