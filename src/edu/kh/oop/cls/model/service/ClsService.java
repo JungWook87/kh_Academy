@@ -114,12 +114,17 @@ public class ClsService {
 		User u3 = new User("test", "pw1234");
 		System.out.println(u3.getUserId());
 		System.out.println(u3.getUserPw());
+		System.out.println(u3.getUserName());
+		System.out.println(u3.getUserAge());
+		System.out.println(u3.getUserGender());
 		
 		System.out.println("=================");
 		User u4 = new User("test4", "pw4444");
 		System.out.println(u4.getUserId());
 		System.out.println(u4.getUserPw());
-		
+		System.out.println(u4.getUserName());
+		System.out.println(u4.getUserAge());
+		System.out.println(u4.getUserGender());
 		
 	}
 }

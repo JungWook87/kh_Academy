@@ -34,7 +34,6 @@ public class User {
 	//	-> 전달 받은 값을 저장하고 있는 매개체(지니고있는) 역할의 변수
 	
 	public User(String userId, String userPw) {
-					   // test    // pw1234
 		this.userId = userId;
 		this.userPw = userPw;
 	}
