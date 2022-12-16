@@ -1,7 +1,9 @@
 package edu.kh.oop.cls.model.service;
 
+import java.util.Scanner;
 import edu.kh.oop.cls.model.vo.Student;
 import edu.kh.oop.cls.model.vo.User;
+import edu.kh.oop.cls.model.vo.Webtoon;
 
 public class ClsService {
 	// 클래스 접근제한자 확인하기
@@ -20,7 +22,7 @@ public class ClsService {
 	public void ex2() {
 		// static 필드 확인 예제
 		
-		Student std1 = new Student();
+		Student std1 = new Student();		// std1의 경우 인스턴스를 담았지만 지역변수이다.
 		Student std2 = new Student();
 		
 		System.out.println("std1.schoolName : " + std1.schoolName);
@@ -126,5 +128,34 @@ public class ClsService {
 		System.out.println(u4.getUserAge());
 		System.out.println(u4.getUserGender());
 		
+	}
+	
+	public void test() {
+		Scanner sc = new Scanner(System.in);
+		
+		Webtoon test = new Webtoon();
+		
+		System.out.print(test.getName() + " : ");
+		String inputName = sc.nextLine();
+		test.setName(inputName);
+		
+		System.out.print(test.getSite() + " : ");
+		String inputSite = sc.nextLine();
+		test.setSite(inputSite);
+		
+		System.out.print(test.getDay() + " : ");
+		String inputDay = sc.nextLine();
+		if(inputDay.length() == 1) {
+			inputDay += "요일";
+		}
+		test.setDay(inputDay);
+		
+		System.out.print(test.getGenre() + " : ");
+		String inputGenre = sc.nextLine();
+		test.setGenre(inputGenre);
+		
+		System.out.println("========================");
+		System.out.printf("\"%s\"는(은) \"%s\"에서 \"%s\"에 연재되는 \"%s\"장르의 웹툰 입니다.", 
+				test.getName(), test.getSite(), test.getDay(), test.getGenre());
 	}
 }
