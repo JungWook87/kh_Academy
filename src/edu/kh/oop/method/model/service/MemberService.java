@@ -68,7 +68,7 @@ public class MemberService {	// 클래스
 			
 			switch(menuNum) {
 			case 1 : System.out.println( signUp());break;
-			case 2 : break;
+			case 2 : System.out.println( login()); break;
 			case 3 : break;
 			case 4 : break;
 			case 0 : break;
