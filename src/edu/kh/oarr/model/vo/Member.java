@@ -42,7 +42,7 @@ public class Member {
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
 		// return;
-		// 모든 메서드는 종료 시 호출한 곳으로 돌아가기 retrun 구문이 작성되어야 하지만
+		// 모든 메서드는 종료 시 호출한 곳으로 돌아가기 return 구문이 작성되어야 하지만
 		// 단, void일 경우 생략 가능하다. -> 생략 시 컴파일러가 자동 추가 
 	}
 

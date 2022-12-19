@@ -35,16 +35,16 @@ public class MemberService {
 			System.out.println("5. 회원 검색(지역)");
 			System.out.println("0. 프로그램 종료");
 			
-			System.out.println("\n메뉴 입력 >>> ");
+			System.out.print("\n메뉴 입력 >>> ");
 			menuNum = sc.nextInt();
 			sc.nextLine();
 			
 			switch(menuNum) {
-			case 1 : break;
-			case 2 : break;
-			case 3 : break;
-			case 4 : break;
-			case 5 : break;
+			case 1 : System.out.println(signUp()); break;
+			case 2 : System.out.println(login());  break;
+			case 3 : System.out.println(selectMember()); break;
+			case 4 : System.out.println(update());break;
+			case 5 : System.out.println(searching()); break;
 			case 0 : System.out.println("\n프로그램을 종료 합니다."); break;
 			default : System.out.println("\n번호를 잘못 입력 하셨습니다.");
 			}
@@ -52,6 +52,7 @@ public class MemberService {
 		} while(menuNum != 0);
 	}
 	
+	// 1) 회원가입
 	public String signUp() {
 		System.out.println("\n===== 회원 가입 =====");
 		
@@ -69,7 +70,16 @@ public class MemberService {
 		
 		System.out.print("아이디 : ");
 		String memberId = sc.next();
-		System.out.print("비밀번허 : ");
+		
+		for(int i = 0; i < memberArr.length; i++) {
+			if(memberArr[i] != null) {
+				if(memberArr[i].getMemberId().equals(memberId)) {
+					return "\n이미 존재하는 아이디 입니다.";
+				}
+			}
+		}
+		
+		System.out.print("비밀번호 : ");
 		String memberPw = sc.next();
 		System.out.print("비밀번호 확인 : ");
 		String memberPw2 = sc.next();
@@ -80,15 +90,16 @@ public class MemberService {
 		System.out.print("지역 : ");
 		String memberRegion = sc.next();
 		
-		if(memberPw == memberPw2) {
+		
+		if(memberPw.equals(memberPw2)) {
 			// 멤버 객체를 생성해서 할당된 주소를 memberArr의 비어있는 인덱스에 대입
 			memberArr[index] = new Member(memberId, memberPw, memberName, memberAge, memberRegion);
 			
-			return "회원 가입 성공!!";
+			return "\n회원 가입 성공!!";
 			
 		} else {
 			
-			return "회원 가입 실패(비밀번호 불일치)";
+			return "\n회원 가입 실패(비밀번호 불일치)";
 			
 		}
 	}
@@ -109,17 +120,130 @@ public class MemberService {
 		return -1;
 	}
 	
+	// 2) 로그인
 	public String login() {
+		System.out.println("\n===== 로그인 =====");
+		System.out.println();
 		
-		// 1) memberaArr 배열 내 요소를 순서대로 접근하여 null이 아닌지 확인
+		System.out.print("아이디 : ");
+		String id = sc.next();
+		System.out.print("비밀번호 : ");
+		String pw = sc.next();
+		
+		// 1) memberArr 배열 내 요소를 순서대로 접근하여 null이 아닌지 확인
+		for(int i = 0; i < memberArr.length; i++) {
+			
 			// 회원 정보가 있을 경우
-			// 2) 회원정보(memberArr[i])에 아이디, 비밀번호와 
-			//    입력받은 아이디, 비밀번호가 같은지 확인
-				// 3) 로그인 회원 정보 객체(Member)를 참조하는 변수 loginMember에
-				//    현재 접근 중인 memberArr[i] 요소에 저장된 주소를 얕은 복사
-		
+			if(memberArr[i] != null) {
+				
+				// 2) 회원정보(memberArr[i])에 아이디, 비밀번호와 
+				//    입력받은 아이디, 비밀번호가 같은지 확인
+				if(memberArr[i].getMemberId().equals(id)) {
+					
+					if(memberArr[i].getMemberPw().equals(pw)) {
+						
+						// 3) 로그인 회원 정보 객체(Member)를 참조하는 변수 loginMember에
+						//    현재 접근 중인 memberArr[i] 요소에 저장된 주소를 얕은 복사
+						loginMember = memberArr[i];
+						
+						return "\n환영합니다." + memberArr[i].getMemberName() + "님";
+					
+					} else {
+						
+						return "\n비밀번호가 틀렸습니다.";
+					
+					}
+				}
+			}
+		}
 		// 4) 로그인 성공 혹은 실패에 따른 결과값 반환
+		return "\n아이디가 존재하지 않습니다.";
+	}
+
+	// 3) 회원정보조회
+	public String selectMember() {
 		
-		return "";
+		System.out.println("\n===== 회원 정보 조회 =====");
+		System.out.println();
+		
+		// 1) 로그인여부
+		if(loginMember == null) {
+			return "\n로그인 먼저 해주세요.";
+		}
+		
+		// 2) 아이디, 이름, 나이, 지역
+		System.out.println("\n현재 회원님의");
+		System.out.println("아이디 : " + loginMember.getMemberId());
+		System.out.println("이름 : " + loginMember.getMemberName());
+		System.out.println("나이 : " + loginMember.getMeberAge());
+		System.out.println("거주지역 : " + loginMember.getRegion());
+		
+		return "입니다.";
+	}
+	
+	// 4) 회원정보수정
+	public String update() {
+		
+		System.out.println("\n===== 회원 정보 수정 =====");
+		System.out.println();
+		
+		// 1) 로그인 여부
+		if(loginMember == null) {
+			return "\n로그인 먼저 해주세요.";
+		}
+		
+		// 2) 수정내용 기입
+		System.out.println("\n현재 회원님의");
+		
+		System.out.println("이름 : " + loginMember.getMemberName());
+		System.out.print("변경할 이름 : ");
+		String name = sc.next();
+		
+		System.out.println("나이 : " + loginMember.getMeberAge());
+		System.out.print("변경할 나이 : ");
+		int age = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("거주지역 : " + loginMember.getRegion());
+		System.out.print("변경할 거주지역 : ");
+		String region = sc.next();
+		
+		// 3) 비밀번호 확인
+		// 4) 성공실패 리턴
+		System.out.print("비밀번호를 입력해주세요 >>> ");
+		String pw = sc.next();
+		
+		if(loginMember.getMemberPw().equals(pw)) {
+			
+			loginMember.setMemberName(name);
+			loginMember.setMeberAge(age);
+			loginMember.setRegion(region);
+			
+			return "\n회원 정보 수정 완료!!";
+		}
+		return "\n회원 정보 실패 (비밀번호 오류)";
+	}
+	
+	// 5) 회원검색(지역)
+	public String searching() {
+		
+		System.out.println("\n===== 회원 지역 검색 =====");
+		
+		System.out.print("\n지역을 입력해 주세요 >>");
+		String region = sc.next();
+		
+		String str ="";
+		
+		for(int i = 0; i < memberArr.length; i++) {
+			
+			if(memberArr[i] != null) {
+				if(memberArr[i].getRegion().equals(region)) {
+					str += memberArr[i].getMemberName() + " ";
+				}
+			}
+		}
+		
+		System.out.println();
+		return str;
 	}
 }
