@@ -18,7 +18,7 @@ public class Run {
 		for(int i = 0; i < emp.length; i++) {
 			System.out.print("emp[" + i + "] : " + emp[i].information() + "\n");
 		}
-		System.out.println("=======================================================");
+		System.out.println("============================================================================");
 		
 		// 3) 빈 필드에 값 넣기
 		emp[0].setEmpNo(0);
@@ -40,7 +40,7 @@ public class Run {
 		// 4) 출력
 		System.out.println("emp[0] : " + emp[0].information());
 		System.out.println("emp[1] : " + emp[1].information());
-		System.out.println("=======================================================");
+		System.out.println("============================================================================");
 		
 		// 5) 직원 각각이 보너스가 적용된 연봉 계산후 출력
 		// 연봉 = (급여 + (급여 * 보너스포인트)) * 12
@@ -52,7 +52,7 @@ public class Run {
 		System.out.println("김말똥의 연봉 : " + emp0 + "원");
 		System.out.println("홍길동의 연봉 : " + emp1 + "원");
 		System.out.println("강말순의 연봉 : " + emp2 + "원");
-		System.out.println("=======================================================");
+		System.out.println("============================================================================");
 		
 		// 6) 총 직원 연봉의 평균 후 출력
 		System.out.println("직원들의 연봉의 평균 : " + avg + "원");
