@@ -18,7 +18,7 @@ public class MemberService {
 		// memberARr 배열 0, 1, 2 인덱스 초기화
 		memberArr[0] = new Member("user01", "111", "홍길동", 30, "서울");
 		memberArr[1] = new Member("user02", "222", "고길동", 25, "경기");
-		memberArr[2] = new Member("user03", "333", "홍길순", 25, "용인");
+		memberArr[2] = new Member("user03", "333", "홍길순", 25, "인천");
 		
 	}
 	
@@ -172,13 +172,15 @@ public class MemberService {
 		}
 		
 		// 2) 아이디, 이름, 나이, 지역
-		System.out.println("\n현재 회원님의");
-		System.out.println("아이디 : " + loginMember.getMemberId());
-		System.out.println("이름 : " + loginMember.getMemberName());
-		System.out.println("나이 : " + loginMember.getMeberAge());
-		System.out.println("거주지역 : " + loginMember.getRegion());
-		
-		return "입니다.";
+		String str ="";
+		str = "\n현재 회원님의";
+		str += "\n아이디 : " + loginMember.getMemberId();
+		str += "이름 : " + loginMember.getMemberName();
+		str += "나이 : " + loginMember.getMeberAge() + "세";
+		str += "거주지역 : " + loginMember.getRegion();
+		str += "\n입니다.";
+
+		return str;
 	}
 	
 	// 4) 회원정보수정
@@ -209,10 +211,10 @@ public class MemberService {
 		String region = sc.next();
 		
 		// 3) 비밀번호 확인
-		// 4) 성공실패 리턴
 		System.out.print("비밀번호를 입력해주세요 >>> ");
 		String pw = sc.next();
 		
+		// 4) 성공시 이름 나이 지역 수정 후 완료 리턴
 		if(loginMember.getMemberPw().equals(pw)) {
 			
 			loginMember.setMemberName(name);
@@ -221,7 +223,8 @@ public class MemberService {
 			
 			return "\n회원 정보 수정 완료!!";
 		}
-		return "\n회원 정보 실패 (비밀번호 오류)";
+		// 5) 실패 리턴
+		return "\n회원 정보 수정 실패 (비밀번호 불일치)";
 	}
 	
 	// 5) 회원검색(지역)
@@ -229,21 +232,32 @@ public class MemberService {
 		
 		System.out.println("\n===== 회원 지역 검색 =====");
 		
+		// 1) 지역검색
 		System.out.print("\n지역을 입력해 주세요 >>");
 		String region = sc.next();
 		
-		String str ="";
+		boolean flag = false;
+		String str = region + "에 사는 회원은 " ;
 		
+		// 2) 배열의 값 유무 확인
 		for(int i = 0; i < memberArr.length; i++) {
 			
+			// 3) 값이 있으면 입력받은 지역과 일치여부 확인
+			// 4) 일치하면 이름 더해주며 출력
 			if(memberArr[i] != null) {
 				if(memberArr[i].getRegion().equals(region)) {
-					str += memberArr[i].getMemberName() + " ";
+					str += "\n" + "아이디 : " + memberArr[i].getMemberId() + ", " + "이름 : " +  memberArr[i].getMemberName() + " ";
+					flag = true;
 				}
 			}
 		}
 		
-		System.out.println();
-		return str;
+		if(!flag) {
+			System.out.println();
+			return "일치하는 회원이 없습니다.";
+		} else {
+			System.out.println();
+			return str;
+		}
 	}
 }
