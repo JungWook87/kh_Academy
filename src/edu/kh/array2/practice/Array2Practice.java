@@ -2,8 +2,11 @@ package edu.kh.array2.practice;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Array2Practice {
+	
+	Scanner sc = new Scanner(System.in);
 	
 	public void practice1() {
 		
@@ -93,4 +96,90 @@ public class Array2Practice {
 			System.out.println();
 		}
 	}
+
+	public void practice5() {
+		
+		int num1 = 0;
+		int num2 = 0;
+		
+		while(true) {
+			
+			System.out.print("행 크기 : ");
+			num1 = sc.nextInt();
+			
+			if (num1 >= 1 && num1 <= 10) {
+				
+				System.out.print("열 크기 : ");
+				num2 = sc.nextInt();
+				
+				if(num2 >= 1 && num2 <= 10) {
+					break;
+				} else {
+					System.out.println("반드시 1~10 사이의 정수를 입력해야 합니다.");
+				}
+			} else {
+				System.out.println("반드시 1~10 사이의 정수를 입력해야 합니다.");
+			}
+		}
+		
+		char[][] arr = new char[num1][num2];
+		
+		for(int i =0; i <arr.length; i++) {
+			for(int j = 0; j < arr[0].length; j++) {
+				int random =(int)(Math.random() * 26) + 65;
+				
+				arr[i][j] = (char)random;
+			}
+		}
+		
+		String result = "";
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j <arr[0].length; j++) {
+				if(j == arr[0].length - 1) {
+					result += arr[i][j] + "\n";
+				} else {
+					result += arr[i][j] + " ";
+				}
+			}
+		}
+		
+		System.out.println(result);
+	}
+
+	public void practice6() {
+		
+		System.out.print("행의 크기 : ");
+		int num = sc.nextInt();
+		
+		char a = 'a';
+		String result = "";		
+		
+		char[][] arr = new char[num][];
+		
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print("열의 크기 : ");
+			int num2 = sc.nextInt();
+			
+			arr[i] = new char[num2];
+			
+			for(int j = 0; j < num2; j++) {
+				
+				arr[i][j] = a;
+				
+				if(j == num2-1) {
+					result += a + "\n";
+				} else {
+					result += a + " ";
+				}
+				
+				a++;
+			}
+		}
+		
+		System.out.println(result);
+		
+	}
+
+
+
 }
