@@ -4,17 +4,23 @@ import edu.kh.poly.practice.model.vo.Person;
 
 public interface QuestionInterface {
 	
-	// 메뉴 출력
+//	 메뉴 출력 
+//	1. 모든 요소 출력 
+//	2. 학생 정보만 출력 
+//	3. 직원 정보만 출력 
+//	4. 정보 찾기(이름) 
+//	5. 모든 사람의 나이 (합/최고/최저) 출력 
+//	6. 입력 인덱스 삭제 
+//	7. 학생 or 직원등록
+//	0. 프로그램 종료
 	public abstract void displayMenu();
 	
-	// 1. Person 배열 pArr에 학생 또는 직원 등록하기.
-	// -> 숫자 1을 입력 받으면 학생 객체를 생성해 배열요소에 대입
-	// -> 숫자 2를 입력 받으면 직원 객체를 생성해 배열 요소에 대입
-		public abstract void insertPerson();
+
+	public abstract void insertPerson();
 	
 	// 2.pArr 배열에 저장되어있는 모든 요소 출력하기.
 	// 배열요소에 값이 입력되지 않은 경우 "배열요소에 저장된 정보가 없습니다."
-		public abstract void selectAll();
+	public abstract void selectAll();
 	
 	// 3. pArr배열에서 학생 정보만 출력하기
 	public abstract void selectStudent();
