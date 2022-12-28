@@ -118,8 +118,8 @@ public class StudentService {
 				case 2 : selectAll(); break;
 				case 3 : System.out.println(updateStudent()); break;
 				case 4 : System.out.println(removeStudent()); break;
-				case 5 :   break;
-				case 6 :   break;
+				case 5 : searchName1(); break;
+				case 6 : searchName2(); break;
 				case 0 : System.out.println("프로그램 종료"); break;
 				default : System.out.println("번호를 잘못 입력하셨습니다.");
 				}
@@ -342,12 +342,51 @@ public class StudentService {
 	 */
 	public void searchName1() {
 		
+		System.out.println("===== 학생 검색(이름 일치) =====");
+		
+		System.out.print("검색할 이름 입력 : ");
+		String input = sc.next();
+		
+		boolean flag = true;	// flag가 true인 경우 => 검색 결과가 없습니다.
+		
+		for(Student std : studentList) {
+			if(std.getName().equals(input)) { // 이름이 일치하는 경우
+				System.out.println(std);
+				flag = false;
+			}
+		}
+		
+		if(flag) {
+			System.out.println("검색 결과가 없습니다.");
+		}
+		
 	}
 	
 	/**
 	 * 6. 이름에 특정 문자열이 포함되는 학생을 찾아서 조회하는 메서드
 	 */
 	public void searchName2() {
+		
+		System.out.println("===== 학생 검색(문자열 포함) =====");
+		
+		System.out.print("이름에 포함될 문자열 입력 : ");
+		String input = sc.next();
+		
+		boolean flag = true;	// flag가 true인 경우 => 검색 결과가 없습니다.
+		
+		for(Student std : studentList) {
+			
+			// contains : 포함
+			// boolean String.contains(문자열) : String에 문자열이 포함되어있으면 true
+			if(std.getName().contains(input)) { 
+				System.out.println(std);
+				flag = false;
+			}
+		}
+		
+		if(flag) {
+			System.out.println("검색 결과가 없습니다.");
+}
 		
 	}
 }
