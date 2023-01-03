@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -30,6 +33,9 @@ public class BookService {
 	public BookService() {
 		bookmember.add(new Book("용의자X의 헌신", "히가시노게이고", 15120, "재인출판사"));
 		bookmember.add(new Book("자바의정석", "남궁성", 30000, "재인출판사"));
+		bookmember.add(new Book("수학의정석", "가나다", 12335, "가나"));
+		bookmember.add(new Book("국어의정석", "세종대왕님", 12335, "한글"));
+		
 	}
 	
 	
@@ -63,7 +69,7 @@ public class BookService {
 				case 3 : System.out.println(bookUpdate()); break;
 				case 4 : bookDelete(); break;
 				case 5 : favoritesAdd(); break;
-				case 6 :  break;
+				case 6 : favoritesDelte(); break;
 				case 0 : System.out.println("\n프로그램을 종료 합니다.\n"); break;
 				default : System.out.println("\n번호를 잘못 입력하셨습니다.\n");
 				
@@ -298,52 +304,82 @@ public class BookService {
 		
 	}
 	
+	
+	public class Mycomparator implements Comparator<Book>{
+
+		@Override
+		public int compare(Book o1, Book o2) {
+			if(o1.getBookNumber() > o2.getBookNumber()) {
+				return 1;
+			}
+			return -1;
+		}
+		
+	}
+	
+	List<Book> arrList = new ArrayList<Book>();
+	
 	// 6) 즐겨찾기 추가
 	public void favoritesAdd() {
 		
-		selectBook();
-		System.out.print("\n추가하실 책의 이름을 입력하세요 >>> ");
-		String input = sc.nextLine();
-		
-		String str1 = "";
-		String str2 = "";
-		
-		int i = 0;
-		for(Book book : bookmember) {
-			if(book.getName().equals(input)) {
-			
-				int num = i;
-				break;
+		int num = -1;
+
+		while(num != 9) {
+
+			boolean flag = true;
+
+			try {
+				
+				System.out.println("1.즐겨찾기 추가");
+				System.out.println("9.이전메뉴로");
+				System.out.print("번호를 입력하세요 >>> ");
+				num = sc.nextInt();
+				sc.nextLine();
+				
+				if( num == 1 ) {
+					
+					selectBook();
+					System.out.print("\n추가하실 책의 이름을 입력하세요 >>> ");
+					String input = sc.nextLine();
+					
+					for(Book book : bookmember) {
+						if(book.getName().equals(input)) {
+							arrList.add(book);
+							flag = false;
+							break;
+						}
+					}
+					
+					if(flag) {
+						System.out.println("일치하는 책이 없습니다.");
+					}
+					
+				}
+				
+			} catch(InputMismatchException e) {
+				System.out.println("유효하지 않은 형식입니다.");
+				sc.nextLine();
 				
 			}
 			
-			i++;
 		}
+		
+		Mycomparator myComparator = new Mycomparator();
+		Collections.sort(arrList, myComparator);
 		
 		FileWriter fw = null;
 		
 		try {
 			
-			fw = new FileWriter("favorites.txt", true);
-			
-			
-			boolean flag = true;
+			fw = new FileWriter("favorites.txt");
 			
 			String result = "";
 			
-			for(Book book : bookmember) {
-				if(book.getName().equals(input)) {
-					flag = false;
-					result += book.getBookNumber() + "   "  + book.getName() + "   " + book.getAuthor() + "\n";
-					fw.write(result);
-					break;
+			for(Book book : arrList) {
+				result += book.getBookNumber() + " " + book.getName() + " " + book.getAuthor() + "\n";
 				}
-			}
 			
-			if(flag) {
-				System.out.println("일치하는 책이 없습니다.");
-			}
-			
+			fw.write(result);
 		} catch(IOException e) {
 			
 			e.printStackTrace();
@@ -359,31 +395,57 @@ public class BookService {
 		
 		
 	}
-	
-	
-	private FileReader FileReader(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 
 	// 7) 즐겨찾기 삭제
-//	public void favoritesDelte() {
-//		
-//		FileReader fr = null;
-//		
-//		try {
-//			
-//			fr = new FileReader("favorites.txt");
-//			
-//		} catch(IOException e) {
-//			
-//			e.printStackTrace();
-//			
-//		} finally {
-//			fr.close();
-//		}
-//	}
+	public void favoritesDelte() {
+		
+		int num = -1;
+
+		while(num != 9) {
+
+			boolean flag = true;
+
+			try {
+				
+				System.out.println("1.즐겨찾기 취소");
+				System.out.println("9.이전메뉴로");
+				System.out.print("번호를 입력하세요 >>> ");
+				num = sc.nextInt();
+				sc.nextLine();
+				
+				if( num == 1 ) {
+					
+					
+					for(Book list : arrList) {
+						System.out.println(list);
+					}
+					
+					System.out.print("\n취소하실 책의 이름을 입력하세요 >>> ");
+					String input = sc.nextLine();
+					
+					
+					for(Book book : bookmember) {
+						if(book.getName().equals(input)) {
+							arrList.remove(book);
+							flag = false;
+							break;
+						}
+					}
+					
+					if(flag) {
+						System.out.println("일치하는 책이 없습니다.");
+					}
+					
+				}
+				
+			} catch(InputMismatchException e) {
+				System.out.println("유효하지 않은 형식입니다.");
+				sc.nextLine();
+				
+			}
+			
+		}
+	}
 	
 	
 	
