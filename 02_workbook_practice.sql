@@ -118,19 +118,3 @@ FROM TB_GRADE tg
 WHERE STUDENT_NO = 'A112113'
 GROUP BY SUBSTR(TERM_NO, 1, 4), SUBSTR(TERM_NO, 5), POINT;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
