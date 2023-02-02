@@ -7,7 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import edu.kh.emp.model.vo.Employee;
 
@@ -466,7 +469,12 @@ public class EmployeeDAO {
 	 * @return
 	 */
 	public Employee selectEmpId(int empId) {
-		Employee emp = new Employee();
+		
+		// 결과 저장용 변수 선언
+		Employee emp = null;
+		// 만약 조회 결과가 있으면 Employee 객체를 생성해서 emp에 대입(null 이 아님)
+		// 만약 조회 결과가 없으면 emp에 아무것도 대입하지 않음(null)
+		
 		
 		try {
 			Class.forName(driver);
@@ -485,7 +493,7 @@ public class EmployeeDAO {
 			
 			rs = pstmt.executeQuery();
 			
-			while(rs.next()) {
+			if(rs.next()) {
 				String empName = rs.getString("EMP_NAME");
 				String empNo = rs.getString("EMP_NO");
 				String email = rs.getString("EMAIL");
@@ -501,6 +509,7 @@ public class EmployeeDAO {
 			e.printStackTrace();
 		} finally {
 			try {
+				// JDBC 객체의 변수 닫기
 				if(rs != null) rs.close();
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
@@ -569,6 +578,100 @@ public class EmployeeDAO {
 	}
 
 
+	/** 부서별 급여 합 전체 조회 DAO
+	 * @return empMap
+	 */
+	public Map<String, Integer> selectDeptTotalSalary(){
+		
+		//Map<String, Integer> empMap = new HashMap<>();
+		Map<String, Integer> empMap = new LinkedHashMap<>();
+		// LinkedHashMap : key 순서가 유지되는 HashMap
+		// -> (ORDER BY 절 정렬 결과를 그대로 저장 가능)
+		
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, user, pw);
+			
+			String sql = "SELECT NVL(DEPT_CODE,'부서없음') DEPT_CODE, SUM(SALARY) TOTAL"
+					+ " FROM EMPLOYEE"
+					+ " GROUP BY DEPT_CODE"
+					+ " ORDER BY DEPT_CODE";
+			
+			stmt = conn.createStatement();
+			
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				String deptCode = rs.getString("DEPT_CODE");
+				int total = rs.getInt("TOTAL");
+				
+				empMap.put(deptCode, total);
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(rs != null) rs.close();
+				if(stmt != null) stmt.close();
+				if(conn != null) conn.close();
+				
+			} catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return empMap;
+	}
+	
+	
+	/** 직급별 급여 평균 조회 DAO
+	 * @return empMap
+	 */
+	public Map<String, Double> selectJobAvgSalary(){
+		
+		Map<String, Double> empMap = new LinkedHashMap<>();
+		
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, user, pw);
+			
+			String sql = "SELECT JOB_NAME 직급명, ROUND(AVG(SALARY), 1) 평균급여"
+					+ " FROM EMPLOYEE"
+					+ " JOIN JOB USING(JOB_CODE)"
+					+ " GROUP BY JOB_NAME, JOB_CODE"
+					+ " ORDER BY JOB_CODE";
+			// GROUP BY절에 JOB_CODE를 포함시켜
+			// ORDER BY절 정렬 컬럼으로 사용 가능하게 만든다
+			
+			
+			stmt = conn.createStatement();
+			
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				String jobName = rs.getNString("직급명");
+				double avg = rs.getDouble("평균급여");
+				
+				empMap.put(jobName, avg);
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(rs != null) rs.close();
+				if(stmt != null) stmt.close();
+				if(conn != null) conn.close();
+				
+			} catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return empMap;
+	}
+	
 
 }
 

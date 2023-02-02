@@ -6,6 +6,7 @@ import java.sql.Statement;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.List;
+import java.util.Map;
 
 import edu.kh.emp.model.dao.EmployeeDAO;
 //import edu.kh.emp.model.dao.EmployeeDAO;
@@ -354,6 +355,13 @@ public class EmployeeView {
 	 */
 	public void selectDeptTotalSalary() {
 		
+		
+		Map<String, Integer> empMap = dao.selectDeptTotalSalary();
+		
+		for(String key : empMap.keySet()) {
+			Object value = empMap.get(key);
+			System.out.println(key + " : " + value + "원");
+		}
 	}
 	
 	
@@ -362,7 +370,11 @@ public class EmployeeView {
 	 */
 	public void selectJobAvgSalary() {
 		
+		Map<String, Double> empMap = dao.selectJobAvgSalary();
 		
+		for(Map.Entry<String, Double> temp : empMap.entrySet()) {
+			System.out.println(temp.getKey() +  " : " + temp.getValue() + "원");
+		}
 	}
 	
 	
