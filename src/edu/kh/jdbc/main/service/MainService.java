@@ -67,7 +67,7 @@ public class MainService {
 
 		close(conn);
 
-		return 0;
+		return result;
 	}
 
 }

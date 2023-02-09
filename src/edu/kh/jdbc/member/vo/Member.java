@@ -99,6 +99,12 @@ public class Member {
 	public void setSecessionFlag(String secessionFlag) {
 		this.secessionFlag = secessionFlag;
 	}
+
+	@Override
+	public String toString() {
+		return "Member [memberNo=" + memberNo + ", memberId=" + memberId + ", memberName=" + memberName
+				+ ", memberGender=" + memberGender + ", enrollDate=" + enrollDate + "]";
+	}
 	
 	
 	

@@ -15,7 +15,7 @@
 	<!-- 아이디 중복 검사 -->
 	<entry key ="idDupCheck">
 		SELECT COUNT(*) FROM MEMBER
-		WHERE EMP_ID = ?
+		WHERE MEMBER_ID = ?
 		AND SECESSION_FL = 'N'
 	</entry>
 	<!-- 회원 가입 -->
