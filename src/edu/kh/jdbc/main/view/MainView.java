@@ -16,7 +16,7 @@ public class MainView {
 	private MainService service = new MainService();
 	
 	// 로그인된 회원 정보를 저장한 객체를 참조하는 참조 변수
-	private static Member LoginMember = null;
+	public static Member LoginMember = null;
 	// -> 로그인 X == null
 	// -> 로그인 O != null
 	
@@ -78,7 +78,7 @@ public class MainView {
 							input = -1;
 						}
 						break; // 회원 기능 서브 메뉴 출력
-					case 2 : boardView.boardMenu(LoginMember); break; // 게시판기능 서브 메뉴 출력
+					case 2 : boardView.boardMenu(); break; // 게시판기능 서브 메뉴 출력
 					case 0 : 
 						LoginMember  = null; // 로그아웃 == loginmember가 참조하는 객체 없음(==null)
 						System.out.println("\n[로그아웃 되었습니다]\n");
