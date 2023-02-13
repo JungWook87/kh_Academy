@@ -1,0 +1,41 @@
+#test1 > p:only-child{
+    background-color: aqua;
+    /* 자식이 p와 pre 두명이기 때문에 아무일도 일어나지 않는다.
+        자식이 하나일 때만 가능하다 */
+}
+
+#test2 > p:only-of-type{
+    background-color: aqua;
+    /* 해석 순서에 따라 타입을 먼저보고 개수 따짐 */
+}
+
+#test3 > p:empty{
+    background-color: lime;
+    height: 30px;
+}
+
+/* 여러 선택자 동시 선택 */
+#test4-1, #test4-2, .test4-3{
+    background-color: yellow;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+/* 특정 요소 내부에 있는 특정 클래스만 선택 */
+
+/* #test5-1 의 후손 중 클래스가 c5인 요소 선택 */
+
+#test5-1 .c5{
+    background-color: aquamarine;
+}
+
+/* #test5-2 의 자식 중 클래스가 c5인 li요소만 선택 */
+#test5-2 > li.c5{
+    /* 띄어쓰기 주의. 띄어쓰게 되면 li의 후손중에 클래스가 c5인 애들 */
+    background-color: aqua;
+}
+
+/* 클래스가 여러개인 요소만 선택 */
+.test6.c6{
+    background-color: red;
+}
