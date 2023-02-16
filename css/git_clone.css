@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.blnav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: black;
+    color: aliceblue; */
+}
+
+.blcontent{
+    width: 70%;
+    display: flex;
+
+}
+
+.blcontent > div:nth-of-type(1){
+    flex-basis: 10%;
+}
+.blcontent > div:nth-of-type(2){
+    flex-basis: 50%;
+}
+.blcontent > div:nth-of-type(3){
+    flex-basis: 20%;
+}
+.blcontent > div:nth-of-type(4){
+    flex-basis: 20%;
+}
+
+
+
+.logoarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blnavli ul{
+    display: flex;
+}
+
+.blnavli ul li{
+    display: flex;
+    flex : 0 1 150px;
+}
+
