@@ -1,56 +1,95 @@
 *{
     box-sizing: border-box;
+
 }
 
-div{
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    width: 100%;
+    height: 1000px;
+    display: flex;
     border: 1px solid black;
 }
 
-.header{
-    height: 10vh;
+.left{
+    flex-basis: 20%;
+    border: 1px solid black;
 }
 
-.nav{
-    height: 5vh;
-}
-
-.main{
-    width: 100%;
-    height: 40vh;
+.right{
+    flex-basis: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.u{
+.right > div:nth-of-type(1){
+    flex-basis: 10%;
+    border: 1px solid black;
+}
+
+.right > div:nth-of-type(2){
+    flex-basis: 10%;
+    border: 1px solid black;
+}
+
+.bottom{
+    flex-basis: 80%;
+    background-color: orange;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.bottom > div:first-child{
+    width: 47%;
+    height: 90%;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.one{
+    width: 35%;
+    height: 40%;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.bottom > div:last-child{
+    width: 47%;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.ul{
-    width: 40%;
-    height: 40%;
-}
-.ur{
-    width: 40%;
-    height: 40%;
+.b-right-top{
+    width: 100%;
+    height: 35%;
+    background-color: blue;
+    border: 1px solid black;
 }
 
-
-.l{
-    display: flex;
-}
-
-.lli{
-    width: 80%;
+.b-right-bottom{
+    width: 100%;
     height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: green;
+    border: 1px solid black;
 }
 
-.footer{
-    height: 10vh;
-}
+
+/* 선생님 방법 */
+/*  
+    그리고 class 줄 때는 밑에 어떠한 요소들(컨트롤할 요소들)이 있을 때 클래스를 준다
+    공간 차지는 flex-basis를 이용하고,
+    공간을 다 주고 padding을 통한 경계선 나타냄 */
