@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="../css/회원가입양식.css">
+</head>
+<body>
+    <form action="#">
+        <table border="1">
+            <tr>
+                <td>아이디 </td>
+                <td colspan="3"><input type="text" 
+                    placeholder="영어 소문자 + 숫자 / 5글자 이상" style="width:300px" id="idInput"> <br></td>
+                <td><span id="idResult" class="idError">아이디 사용 불가능</span></td>
+            </tr>
+            
+            <tr>
+                <td>비밀번호</td>
+                <td colspan="3"><input type="password" 
+                    placeholder="영문 대/소문자 + 특수문자 + 숫자 / 8글자 이상" 
+                    style="width:300px" id="pwInput"></td>
+                <td><span id="pwResult" class="pwError">비밀번호 사용 불가능</span></td>
+            </tr>
+
+            <tr>
+                <td>비밀번호 확인</td>
+                <td colspan="3"><input type="password" style="width:300px" id="pw2Input"></td>
+                <td><span id="pw2Result" class="pw2Error">비밀번호 불일치</span></td>
+            </tr>
+
+            <tr>
+                <td>이름</td>
+                <td colspan="3"><input type="text" style="width:300px" 
+                    placeholder="한글 2글자 이상" id="nameInput"></td>
+                <td><span id="nameResult" class="nameError">양식 불일치</span></td>
+            </tr>
+
+            <tr>
+                <td>휴대폰 번호</td>
+                <td colspan="3"><input type="tel" style="width:300px" 
+                    placeholder="숫자만, 단 010으로 시작" id="telInput"></td>
+                <td><span id="telResult" class="telError">양식 불일치</span></td>
+            </tr>
+
+            <tr>
+                <td>주민등록번호</td>
+                <td><input type="text" style="width:130px" placeholder="생년월일"></td>
+                <td style="width:25px; text-align: center">-</td>
+                <td><input type="password" style="width:130px" placeholder="앞 1,2,3,4만 가능"></td>
+                <td><span id="noResult"></span></td>
+            </tr>
+
+            <tr>
+                <td>이메일</td>
+                <td colspan="3"><input type="email" placeholder="@무조건 포함 / .com으로 끝내기" style="width:300px"></td>
+                <td><span id="emailResult"></span></td>
+            </tr>
+          
+            <tr>
+                <td colspan="5" style="text-align: center;"><button>완료</button></td>
+            </tr>
+        </table>
+    </form>
+    
+    <script src="../js/회원가입양식.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.idConfirm{
+    color: green;
+}
+
+.idError{
+    color: red;
+}
+
+.pwConfirm{
+    color: green;
+}
+
+.pwError{
+    color: red;
+}
+
+.pw2Confirm{
+    color: green;
+}
+
+.pw2Error{
+    color: red;
+}
+
+.nameConfirm{
+    color: green;
+}
+
+.nameError{
+    color: red;
+}
+
+.telConfirm{
+    color: green;
+}
+
+.telError{
+    color: red;
+}
