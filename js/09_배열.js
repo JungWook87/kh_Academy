@@ -92,6 +92,7 @@ document.getElementById("btn2").addEventListener("click", function(){
     // [1, 10, 2, 3, 5] -> 숫자가 아니라 문자로 보고, 앞에 글자 1을 먼저 봄
 
     console.log( numArr.sort(function(a,b){ return a - b; }));
+    console.log( numArr.sort(function(a,b){ return b - a; }));
     
     // * sort() 함수는 원본 배열의 순서를 정렬함
     // -> 원본 훼손 발생 (깊은 복사를 이용해 해결)

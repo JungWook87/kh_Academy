@@ -9,7 +9,7 @@
 </head>
 <body>
     <form action="#">
-        <table border="1">
+        <table>
             <tr>
                 <td>아이디 </td>
                 <td colspan="3"><input type="text" 
@@ -41,26 +41,29 @@
             <tr>
                 <td>휴대폰 번호</td>
                 <td colspan="3"><input type="tel" style="width:300px" 
-                    placeholder="숫자만, 단 010으로 시작" id="telInput"></td>
+                    placeholder="-포함, 단 010으로 시작" id="telInput"></td>
                 <td><span id="telResult" class="telError">양식 불일치</span></td>
             </tr>
 
             <tr>
                 <td>주민등록번호</td>
-                <td><input type="text" style="width:130px" placeholder="생년월일"></td>
+                <td><input type="text" style="width:130px" placeholder="생년월일"
+                    id="birth" class="birthError"></td>
                 <td style="width:25px; text-align: center">-</td>
-                <td><input type="password" style="width:130px" placeholder="앞 1,2,3,4만 가능"></td>
-                <td><span id="noResult"></span></td>
+                <td><input type="password" style="width:130px" placeholder="앞 1,2,3,4만 가능"
+                    id="no" class="noError"></td>
+                <td><span id="noResult" style="color:red;">양식 불일치</span></td>
             </tr>
 
             <tr>
                 <td>이메일</td>
-                <td colspan="3"><input type="email" placeholder="@무조건 포함 / .com으로 끝내기" style="width:300px"></td>
-                <td><span id="emailResult"></span></td>
+                <td colspan="3"><input type="email" placeholder="@무조건 포함 / .com으로 끝내기" 
+                    style="width:300px" id="email"></td>
+                <td><span id="emailResult" class="emailError">양식 불일치</span></td>
             </tr>
           
             <tr>
-                <td colspan="5" style="text-align: center;"><button>완료</button></td>
+                <td colspan="5" style="text-align: center;" id="btn"><button>제출</button></td>
             </tr>
         </table>
     </form>
