@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 색깔박스</title>
+    <link rel="stylesheet" href="../css/10_트랜지션 색깔박스.css">
+    <style id="st">
+        .duration{
+            transition-duration: 0s;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div id="outBox">
+            <div class="inBox">
+                <div class="colorBox duration"></div>
+                <div><input type="text" class="colorInput duration"></div>
+            </div>
+
+            <div class="inBox">
+                <div class="colorBox duration"></div>
+                <div><input type="text" class="colorInput duration"></div>
+            </div>
+
+            <div class="inBox">
+                <div class="colorBox duration"></div>
+                <div><input type="text" class="colorInput duration"></div>
+            </div>
+
+            <div class="inBox">
+                <div class="colorBox duration"></div>
+                <div><input type="text" class="colorInput duration"></div>
+            </div>
+
+            <div class="inBox">
+                <div class="colorBox duration"></div>
+                <div><input type="text" class="colorInput duration"></div>
+            </div>
+        </div>
+        <br>
+        현재 transition-duration : <span id="speed">0초</span> <br><br>
+        transition-duration 변경 : <input type="number" id="inputSpeed"> <button type="button" id="btn">변경</button> <br><br>
+        <button type="reset" id="reset">초기화</button>
+    </form>
+
+    <script src="../js/10_트랜지션 색깔박스.js"></script>
+</body>
+</html>

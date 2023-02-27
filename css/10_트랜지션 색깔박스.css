@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#outBox{
+    width: 750px;
+    height: 200px;
+    border : 1px solid black;
+    display: flex;
+}
+
+.inBox{
+    width: 150px;
+    height : 200px;
+    border : 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorInput{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.inBox > div:first-child{
+    flex-basis: 85%;   
+}
+
+.inBox > div:last-child{
+    flex-basis: 15%;
+}
