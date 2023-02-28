@@ -20,6 +20,7 @@
                 <tr>
                     <td>비밀번호</td>
                     <td><input type="password" style="margin-left: 10px;" id="pwInput"></td>
+                    <td><span id="equalPw"></span></td>
                 </tr>
                 <tr>
                     <td>비밀번호확인</td>
@@ -28,12 +29,13 @@
                 <tr>
                     <td>이름</td>
                     <td><input type="text" style="margin-left: 10px;" id="nmInput"></td>
+                    <td><span id="nmConfirm"></span></td>
                 </tr>
                 <tr>
                     <td>성별</td>
                     <td>
-                        <label style="margin-left: 10px;">남 &nbsp;<input type="radio" name="gender"></label>&nbsp;
-                        <label>여 &nbsp;<input type="radio" name="gender"></label>
+                        <label style="margin-left: 10px;">남 &nbsp;<input type="radio" name="gender" id="man" value="male"></label>&nbsp;
+                        <label>여 &nbsp;<input type="radio" name="gender" value="female"></label>
                     </td>
                 </tr>
                 <tr>
@@ -46,7 +48,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="text-align: right; padding-top: 10px;"><button type="reset">초기화</button><button>회원가입</button></td>               
+                    <td style="text-align: right; padding-top: 10px;"><button type="reset" id="reset">초기화</button><button>회원가입</button></td>               
                 </tr>
             </table>
         </fieldset>
