@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/회원가입.css">
+</head>
+<body>
+    <form action="main.html" method="get" onsubmit="validate()">
+        <fieldset>
+            <legend>회원 가입 양식</legend>
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" style="margin-left: 10px;" id="idInput"></td>
+                    <td><button style="margin-left: 10px;">중복확인</button></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" style="margin-left: 10px;" id="pwInput"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호확인</td>
+                    <td><input type="password" style="margin-left: 10px;" id="pw2Input"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" style="margin-left: 10px;" id="nmInput"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <label style="margin-left: 10px;">남 &nbsp;<input type="radio" name="gender"></label>&nbsp;
+                        <label>여 &nbsp;<input type="radio" name="gender"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="tel" style="margin-left: 10px;" id="telInput"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" style="margin-left: 10px;" id="emailInput"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align: right; padding-top: 10px;"><button type="reset">초기화</button><button>회원가입</button></td>               
+                </tr>
+            </table>
+        </fieldset>
+
+        <script src="../js/회원가입.js"></script>
+    </form>
+</body>
+</html>
