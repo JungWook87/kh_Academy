@@ -5,7 +5,7 @@ document.getElementById("btn1").addEventListener("click", function(){
 
     // ** 중요 **
     // JS 객체의 key는 무조건 string(묵시적으로 string)
-    // -> key 작성시, "", '', (따옴표X)든 모두 string으로 인식
+    // -> key 작성시, "", '', (따옴포X)든 모두 string으로 인식
 
     const brand = "투썸플레이스";
 
