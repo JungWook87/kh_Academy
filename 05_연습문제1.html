@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_연습문제</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .inBox{
+            border: 1px solid black;
+            width: 100px;
+            height : 100px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        input{
+            width: 100px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        .section2{
+            display: flex;
+        }
+        .section3{
+            display: flex;
+        }
+
+        button{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="outBox">
+            <div class="inBox" id="sec1_inBox"></div>
+            <input type="text" id="sec1_input"> 
+            <br>
+            <button type="button" id="btn1">색 변경</button>
+        </div>
+    </div>
+
+    <script>
+        function paint(a, b) {
+            a.css("backgroundColor", b.val());
+        }
+        
+        $("#btn1").on("click", () => {
+            const sec1 = $("#sec1_inBox");
+            let input1 = $("#sec1_input");
+            paint(sec1, input1);
+        });
+
+        $("#btn2").on("click", () => {
+            
+        })
+
+    </script>
+    
+    <hr>
+
+    <div class = "section2">
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="input"> 
+        </div> 
+    </div>
+    <button type="button" id="btn2">색 변경</button>
+
+    <script>
+        function paint(a, b) {
+            a.css("backgroundColor", b.val());
+        }
+        
+        $("#btn2").on("click", () => {
+            const outBoxArr = $('.outBox');
+            const inputArr = $('input');
+            
+            for(let i = 0; i < outBoxArr.length; i++){
+                paint(outBoxArr > )
+            }
+            paint(sec1, input1);
+        });
+
+        $("#btn2").on("click", () => {
+            
+        })
+
+    </script>
+
+    <hr>
+
+    <div class = "section3">
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div>
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text"> 
+        </div> 
+    </div>  
+
+
+
+</body>
+</html>
