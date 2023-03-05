@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05_연습문제</title>
+    <title>Document</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
     crossorigin="anonymous"></script>
 
-    <style>
+     <style>
         *{
             box-sizing: border-box;
         }
@@ -35,87 +35,83 @@
             display: flex;
         }
 
+        .section3 .inBox{
+            transition-duration: 1s;
+        }
+
+
         button{
             margin-left: 5px;
         }
     </style>
 </head>
 <body>
+    <script>
+        function paint(box, input){
+            box.css("backgroundColor", input.val());
+        }
+    </script>
     <div class="section1">
         <div class="outBox">
-            <div class="inBox" id="sec1_inBox"></div>
-            <input type="text" id="sec1_input"> 
-            <br>
-            <button type="button" id="btn1">색 변경</button>
+            <div class="inBox"></div>
+            <input type="text" id="sec1_input">
         </div>
     </div>
+    <button type="button" id="btn1">확인</button>
 
     <script>
-        function paint(a, b) {
-            a.css("backgroundColor", b.val());
-        }
-        
-        $("#btn1").on("click", () => {
-            const sec1 = $("#sec1_inBox");
-            let input1 = $("#sec1_input");
-            paint(sec1, input1);
-        });
-
-        $("#btn2").on("click", () => {
-            
+        $('#btn1').on("click", () => {
+            const box1 = $(".section1 > div > div");
+            const input1 = $('#sec1_input');
+            paint(box1, input1);
+            // $(".section1 > div > div").css("backgroundColor", $('#sec1_input').val());
         })
-
     </script>
-    
+
     <hr>
 
     <div class = "section2">
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
+            <input type="text" class="sec2_input">
         </div>
+
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
+            <input type="text" class="sec2_input">
         </div>
+
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
+            <input type="text" class="sec2_input">
         </div>
+
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
+            <input type="text" class="sec2_input">
         </div>
+
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
+            <input type="text" class="sec2_input">
         </div>
+
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text" class="input"> 
-        </div> 
+            <input type="text" class="sec2_input">
+        </div>
     </div>
-    <button type="button" id="btn2">색 변경</button>
+    <button type="button" id="btn2">확인</button>
 
     <script>
-        function paint(a, b) {
-            a.css("backgroundColor", b.val());
-        }
+        const box2 = $('.section2 .inBox');
+        const input2 = $('.section2 .sec2_input');
         
-        $("#btn2").on("click", () => {
-            const outBoxArr = $('.outBox');
-            const inputArr = $('input');
-            
-            for(let i = 0; i < outBoxArr.length; i++){
-                paint(outBoxArr > )
-            }
-            paint(sec1, input1);
-        });
-
-        $("#btn2").on("click", () => {
-            
-        })
-
+        for(let i = 0; i < box2.length; i++){
+            $("#btn2").on("click", () => {
+                paint($(box2[i]), $(input2[i]));
+            })
+        }
     </script>
 
     <hr>
@@ -123,31 +119,47 @@
     <div class = "section3">
         <div class="outBox">
             <div class="inBox"></div>
-            <input type="text"> 
+            <input type="text" class="sec3_input">
         </div>
-        <div class="outBox">
-            <div class="inBox"></div>
-            <input type="text"> 
-        </div>
-        <div class="outBox">
-            <div class="inBox"></div>
-            <input type="text"> 
-        </div>
-        <div class="outBox">
-            <div class="inBox"></div>
-            <input type="text"> 
-        </div>
-        <div class="outBox">
-            <div class="inBox"></div>
-            <input type="text"> 
-        </div>
-        <div class="outBox">
-            <div class="inBox"></div>
-            <input type="text"> 
-        </div> 
-    </div>  
 
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
 
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
 
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+    </div>
+
+    <script>
+        const box3 = $(".section3 .inBox");
+        const input3 = $(".section3 .sec3_input");
+
+        for(let i = 0; i < box3.length; i++){
+            $(input3[i]).on("input", (e) => {
+                paint($(box3[i]), $(input3[i]));
+                // $(box3[i]).css("backgroundColor", $(e.target).val());
+                $(e.target).css("borderColor", $(e.target).val());
+            })
+        }
+
+    </script>
 </body>
 </html>
