@@ -22,5 +22,98 @@
     </form>
 
     <a href="temp/test1.html">이동</a>
+
+    <hr>
+
+    <h3>JSP 테스트 2</h3>
+
+    <form action="/JSPProject1/pizzaOrder" method="post">
+        <select name="pizza">
+            <option>콤비네이션 피자</option>
+            <option>불고기 피자</option>
+            <option>고구마 피자</option>
+            <option>하와이안 피자</option>
+            <option>통새우 피자</option>
+        </select>
+
+        <br><br>
+
+        사이즈
+        <br>
+        <label>
+        R <input type="radio" name="size" value="R">
+        </label>
+
+        <br>
+        <label>
+        L(+2,000) <input type="radio" name="size" value="L">
+        </label>
+
+        <br><br>
+
+        수량 : <input type="number" name="amount" min="1" max="10" value="1">
+
+        <br><br>
+
+        <button>주문하기</button>
+
+    </form>
+
+
+    <hr>
+
+
+    <h1>회원 가입(JSP 버전)</h1>
+    <form action="/JSPProject1/signIn" method="post">
+        <table>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" name="inputId"></td>
+            </tr>
+
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password" name="inputPw"></td>
+            </tr>
+
+            <tr>
+                <th>비밀번호 확인</th>
+                <td><input type="password" name="inputPw"></td>
+            </tr>
+
+            <tr>
+                <th>이름</th>
+                <td><input type="text" name="inputName"></td>
+            </tr>
+            
+            <tr>
+                <th>이메일</th>
+                <td><input type="email" name="inputEmail"></td>
+            </tr>
+            
+            <tr>
+                <th rowspan="2">취미</th>
+                <td>
+                    공부 <input type="checkbox" name="hobby" value="공부">
+                    게임 <input type="checkbox" name="hobby" value="게임">
+                    헬스 <input type="checkbox" name="hobby" value="헬스">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    독서 <input type="checkbox" name="hobby" value="독서">
+                    영화 <input type="checkbox" name="hobby" value="영화">
+                    코딩 <input type="checkbox" name="hobby" value="코딩">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button>회원 가입</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 </html>
