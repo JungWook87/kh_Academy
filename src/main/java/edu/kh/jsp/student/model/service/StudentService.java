@@ -28,14 +28,15 @@ public class StudentService {
 		return stdList;
 	}
 
-	/** [경제학과] 학과 조회
-	 * @return
+	/** 학과 조회 서비스
+	 * @return stdList
+	 * @param inputDept
 	 */
-	public List<Student> selectDepartment() throws Exception{
+	public List<Student> selectDepartment(String inputDept) throws Exception{
 		
 		Connection conn = getConnection();
 		
-		List<Student> stdList = dao.selectDepartment(conn);
+		List<Student> stdList = dao.selectDepartment(conn, inputDept);
 		
 		close(conn);
 		

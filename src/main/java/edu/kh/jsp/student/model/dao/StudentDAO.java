@@ -72,20 +72,20 @@ public class StudentDAO {
 	}
 
 	/** [경제학과] 학과 조회 DAO
-	 * @param conn
+	 * @param conn, inputDept
 	 * @return stdList
 	 */
-	public List<Student> selectDepartment(Connection conn) throws Exception {
+	public List<Student> selectDepartment(Connection conn, String inputDept) throws Exception {
 		
 		List<Student> stdList = new ArrayList<>();
 		
 		try {
 			
-			String sql = prop.getProperty("selectEconomicsDepartment");
+			String sql = prop.getProperty("selectDepartment");
 			
 			pstmt = conn.prepareStatement(sql);
 			
-			pstmt.setString(1, "경제학과");
+			pstmt.setString(1, inputDept);
 			
 			rs = pstmt.executeQuery();
 			

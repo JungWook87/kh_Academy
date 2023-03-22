@@ -7,27 +7,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경제학과 조회</title>
+    <title>${param.inputDept} 검색 결과</title>
+    
+    <style>
+    	#result-table{
+    		border-collapse : collapse;
+    	}
+    	
+    	thead th{
+    		background-color:balck;
+    		color:white;
+    		padding:5px 30px;
+    	}
+    	
+    	tbody td:not(:nth-child(5)){
+    		text-align:center;
+    	}
+    	
+    	tbody > tr:nth-child(2n) td{
+    		background-color: #B1AFFF;
+    		cursor : pointer;
+    	}
+    </style>
 </head>
 <body>
-    <table border="1">
-    	<tr>
-    		<th>순서</th>
-    		<th>학번</th>
-    		<th>이름</th>
-    		<th>학과</th>
-    		<th>주소</th>
-    	</tr>
+	<h1> [${param.inputDept} 검색 결과]</h1>
+	
+    <table id="result-table">
+    	<thead>
+	    	<tr>
+	    		<th>순서</th>
+	    		<th>학번</th>
+	    		<th>이름</th>
+	    		<th>학과</th>
+	    		<th>주소</th>
+	    	</tr>
+    	</thead>
     	
-    	<c:forEach var="student" items="${stdList}" varStatus="vs">
-    		<tr>
-    			<td>${vs.index}</td>
-    			<td>${student.studentNo}</td>
-    			<td>${student.studentName}</td>
-    			<td>${student.departmentName}</td>
-    			<td>${student.studentAddress}</td>
-    		</tr>
-    	</c:forEach>
+    	<tbody>
+    		<c:choose>
+    			<c:when test="${empty stdList}">
+    				<tr>
+    					<th colspan="5">일치하는 학과가 존재하지 않습니다</th>
+    				</tr>
+    			</c:when>
+    			
+    			<c:otherwise>
+			    	<c:forEach var="student" items="${stdList}" varStatus="vs">
+			    		<tr>
+			    			<td>${vs.count}</td>
+			    			<td>${student.studentNo}</td>
+			    			<td>${student.studentName}</td>
+			    			<td>${student.departmentName}</td>
+			    			<td>${student.studentAddress}</td>
+			    		</tr>
+			    	</c:forEach>
+   				</c:otherwise>
+    		</c:choose>
+    	</tbody>
     </table>
 </body>
 </html>
