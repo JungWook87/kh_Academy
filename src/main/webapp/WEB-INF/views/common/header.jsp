@@ -1,16 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <header>
+    <!-- 클릭 시 메인페이지로 이동하는 로고 -->
+    
+    <!-- 
+    	request.getContextPath() / 
+    	pageContext.request.contextPath
+     --> 
     <section>
-        <!-- 클릭 시 메인페이지로 이동하는 로고 -->
-        
-		<!-- 
-			request.getContextPath() / 
-			pageContext.request.contextPath
-			현재 내가 있는 주소(경로)를 얻어옴
-		 -->
-		  
-        <a href="${contextPath}">
+        <a href=""${contextPath}">
             <img src="${contextPath}/resources/images/logo.jpg" id="home-logo">
         </a>
     </section>
