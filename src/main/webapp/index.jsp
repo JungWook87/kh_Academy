@@ -57,8 +57,10 @@
             </section>
 
             <section class="content-2">
-
-                <form action="#" name="login-frm">
+            
+				<!-- 절대경로 : /community/member/login -->            
+				<!-- 상대경로 (index.jsp 기준) -->
+                <form action="member/login" method="POST" name="login-frm" onsubmit="return loginValidate()">
         
                     <!-- 아이디, 비밀번호, 로그인 버튼 -->
                     <fieldset id="id-pw-area">
