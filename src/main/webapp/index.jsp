@@ -58,50 +58,79 @@
 
             <section class="content-2">
             
-				<!-- 절대경로 : /community/member/login -->            
-				<!-- 상대경로 (index.jsp 기준) -->
-                <form action="member/login" method="POST" name="login-frm" onsubmit="return loginValidate()">
-        
-                    <!-- 아이디, 비밀번호, 로그인 버튼 -->
-                    <fieldset id="id-pw-area">
-                        <section>
-                            <input type="text" name="inputId"
-                             placeholder="아이디" autocomplete="off">
-                            <!-- autocomplete="off" : 자동완성 사용 X -->
-        
-                            <input type="password" name="inputPw" placeholder="비밀번호">
-                        </section>
-        
-                        <section>
-                            <!-- type="submit"이 기본값 -->
-                            <button>로그인</button>
-                        </section>
-                    </fieldset>
-        
-        
-                    <!-- label 태그 내부에 input태그를 작성하면 자동 연결됨 -->
-                    <label>
-                        <input type="checkbox" name="saveId"> 아이디 저장
-                    </label>
-        
-        
-                    <!-- 회원가입 / ID/PW 찾기 -->
-                    <article id="signUp-find-area">
-                    
-                    	<!-- <a href="/community/WEB-INF/views/member/signUp.jsp">테스트이동!</a> -->
-                    
-                    	<!-- WEB-INF 폴더는 외부로부터 직접적으로 요청할 수 없는 폴더 
-                    		왜? 중요한 코드(자바, sql, 설정관련)가 위치하는 폴더로서
-                    			외부로부터 접근을 차단하기 위해서
-                    			
-                    			-> Servlet을 이용 내부 접근(forward)은 가능
-                    	-->
-                    
-                        <a href="${contextPath}/member/signUp">회원가입</a>
-                        <span>|</span>
-                        <a href="#">ID/PW찾기</a>
-                    </article>
-                </form>
+            	<%-- if/else 처리 --%>
+            	<c:choose>
+            		<%-- choose 내부에는 무조건 JSP 주석만 사용 --%>
+            	
+            		<%-- 로그인이 되어있지 않은 경우 --%>
+            		<c:when test="${ empty sesscionScope.loginMember}">
+            		
+            			<!-- 절대경로 : /community/member/login -->            
+						<!-- 상대경로 (index.jsp 기준) -->
+		                <form action="member/login" method="POST" name="login-form" onsubmit="return loginValidate()">
+		        
+		                    <!-- 아이디, 비밀번호, 로그인 버튼 -->
+		                    <fieldset id="id-pw-area">
+		                        <section>
+		                            <input type="text" name="inputEmail"
+		                             placeholder="아이디(이메일)" autocomplete="off"
+		                             value="${cookie.saveId.value}"
+		                             <%-- 현재 페이지 쿠키 중 SaveId의 내용을 출력함 --%>
+		                             >
+		                            <!-- autocomplete="off" : 자동완성 사용 X -->
+		        
+		                            <input type="password" name="inputPw" placeholder="비밀번호">
+		                        </section>
+		        
+		                        <section>
+		                            <!-- type="submit"이 기본값 -->
+		                            <button>로그인</button>
+		                        </section>
+		                    </fieldset>
+		                    
+		                    <%-- 쿠키에 saveId가 있는 경우 --%>
+		                    <c:if test ="${ !empty cookie.saveId.value }">
+		                    	
+		                    	<%-- chk 변수 생성 --%>
+		                    	<c:set var="chk" value="checked" />
+		                    </c:if>
+		                    
+		                    
+		                    
+		                    
+		        
+		        
+		                    <!-- label 태그 내부에 input태그를 작성하면 자동 연결됨 -->
+		                    <label>
+		                        <input type="checkbox" name="saveId" ${chk}> 아이디 저장
+		                    </label>
+		        
+		        
+		                    <!-- 회원가입 / ID/PW 찾기 -->
+		                    <article id="signUp-find-area">
+		                    
+		                    	<!-- <a href="/community/WEB-INF/views/member/signUp.jsp">테스트이동!</a> -->
+		                    
+		                    	<!-- WEB-INF 폴더는 외부로부터 직접적으로 요청할 수 없는 폴더 
+		                    		왜? 중요한 코드(자바, sql, 설정관련)가 위치하는 폴더로서
+		                    			외부로부터 접근을 차단하기 위해서
+		                    			
+		                    			-> Servlet을 이용 내부 접근(forward)은 가능
+		                    	-->
+		                    
+		                        <a href="${contextPath}/member/signUp">회원가입</a>
+		                        <span>|</span>
+		                        <a href="#">ID/PW찾기</a>
+		                    </article>
+		                </form>
+		                
+            		</c:when>
+            		
+            		<%-- 로그인이 된 경우 --%>
+            		<c:otherwise></c:otherwise>
+            	</c:choose>
+            
+				
             </section>
         </section>
 

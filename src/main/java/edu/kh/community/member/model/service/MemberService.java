@@ -63,5 +63,9 @@ public class MemberService {
 		
 		return memberList;
 	}
+
+	public Member login(Member mem) {
+		return null;
+	}
 	
 }
