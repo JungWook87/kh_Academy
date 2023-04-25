@@ -1,0 +1,10 @@
+package edu.kh.comm.member.model.service;
+
+// 상속을 받아도 POJO를 위배하지 않는다 
+// 왜?? POJO의 위배는 외부 라이브러리를 상속받을 때 발생하고,
+// 내가 만든 것을 상속받을 때는 위배되지 않는다
+public class MemberServiceImpl implements  MemberService{
+	
+	
+	
+}
