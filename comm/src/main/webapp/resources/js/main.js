@@ -98,6 +98,13 @@ document.getElementById("select1").addEventListener("click", function(){
 
             // 1) div에 작성된 내용 모두 삭제
             div.innerHTML = "";
+            
+            if(member.memberAddress != null){
+                let temp = member.memberAddress;
+                let addr = temp.split(",,");
+                member.memberAddress = "(" + addr[0] + ")" + " " + addr[1] + " " + addr[2];
+            }
+
 
             if(member != null){ // 회원 정보 존재 O
 
@@ -158,6 +165,7 @@ function selectAll(){ // 회원 전체 조회 함수
     // ajax코드
     $.ajax({
         url : "member/selectAll",
+        type : "GET",
         dataType : "json",    //  응답 데이터의 형식을 "json"으로 지정
                               // -> 자동으로 JS 객체로 변환됨
         success : function( list ){

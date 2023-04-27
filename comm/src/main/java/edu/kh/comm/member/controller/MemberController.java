@@ -1,5 +1,7 @@
 package edu.kh.comm.member.controller;
 
+import java.util.List;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,15 +10,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import edu.kh.comm.member.model.service.MemberService;
 import edu.kh.comm.member.model.service.MemberServiceImpl;
@@ -33,7 +41,7 @@ import edu.kh.comm.member.model.vo.Member;
 
 // @Component // 해당 클래스를 bean으로 등록하라고 프로그램에게 알려주는 주석(Annotation)
 
-@Component // 생성된 bean이 Controller임을 명시 + bean 등록
+@Controller // 생성된 bean이 Controller임을 명시 + bean 등록
 @RequestMapping("/member") // localhost:8080/comm/member 이하의 요청을 처리하는 컨트롤러
 							// localhost:8080/comm/member 
 							// localhost:8080/comm/member/signUp
@@ -246,16 +254,115 @@ public class MemberController {
 		return "member/signUp";
 	}
 	
+	
+	// 이메일 중복 검사
+	@ResponseBody // ajax 응답 시 사용
+	@GetMapping("/emailDupCheck")
+	// @RequestParam("memberEmail") String memberEmail // 파라미터 key값과 저장하려는 변수명이 같으면 생략가능
+	public int emailDupCheck(String memberEmail) {
+		
+		int result = service.emailDupCheck(memberEmail);
+		
+		// 컨트롤러에서 반환되는 값은 forward 또는 redirect를 위한 경로인 경우가 일반적
+		// -> 반환되는 값은 경로로 인식됨
+		
+		// 하지만 ajax 사용에서는 값으로 보내줘야 할 때가 있다
+		
+		// -> 이를 해결하기위한 어노테이션 @ResponseBody가 존재함
+		
+		// @ResponseBody : 반환되는 값을 응답의 몸통(body)에 추가하여
+		//				   이전 요청 주소로 돌아감
+		// -> 컨트롤러에서 반환되는 값이 경로가 아닌 '값 자체'로 인식됨
+		
+		return result;
+		
+	}
 
+	@ResponseBody
+	@GetMapping("/nicknameDupCheck")
+	public int nicknameDupCheck(String memberNickname) {
+		
+		int result = service.nicknameDupCheck(memberNickname);
+		
+		return result;
+	}
+	
+	
+	@PostMapping("/signUp")
+	public String signUp(@ModelAttribute Member newMember, @RequestParam(value="memberAddress", required=false) String[] address, Model model) {
+		
+		String newAddress = String.join(",,", address);
+		
+		if(newAddress.equals(",,,,")) newAddress = null;
+		
+		newMember.setMemberAddress(newAddress);
+		
+		int result = service.signUp(newMember);
+		String message = "";
+		
+		if(result != 0) {
+			message = "회원 가입이 완료 되었습니다";
+		} else {
+			message = "회원 가입이 실패 되었습니다. 다시 시도해 주세요";
+		}
+		
+		model.addAttribute("message", message);
+	
+		return "common/main";
+	}
+	
+	@ResponseBody
+	@PostMapping("/selectOne")
+	public String selectOne(String memberEmail) {
+		
+		Member selectOneMember = service.selectOne(memberEmail);
+		
+		Gson gson = new Gson();
+		
+		String selectOneMemberJson = gson.toJson(selectOneMember);
+		
+		
+		return selectOneMemberJson;
+	}
 	
 	
 	
+	@ResponseBody
+	@GetMapping("/selectAll")
+	public String selectAll() {
+		
+		List<Member> selectAll = service.selectAll();
+		
+		Gson gson = new Gson();
+		
+		String selectAllJson = gson.toJson(selectAll);
+
+		return selectAllJson;
+	}
 	
 	
+	/* 스프링 예외 처리 방법 (3가지, 중복 사용 가능)
+	 * 
+	 * 1순위 : 메서드 별로 예외처리 (try-catch / throws)
+	 * 
+	 * 2순위 : 하나의 컨트롤러에서 발생하는 예외를 모아서 처리
+	 * 		   -> @ExceptionHandler (메서드에 작성)
+	 * 
+	 * 3순위 : 전역(웹 애플리케이션)에서 발생하는 예외를 모아서 처리 
+	 * 		   -> @ControllerAdvice (클래스에 작성) 
+	 * 
+	 */
 	
-	
-	
-	
+	// 회원 컨트롤러에서 발생하는 모든 예외를 모아서 처리
+//	@ExceptionHandler(Exception.class)
+//	public String exceptionHandler(Exception e, Model model) {
+//		e.printStackTrace();
+//		
+//		model.addAttribute("errorMessage", "서비스 이용 중 문제가 발생했습니다");
+//		model.addAttribute("e", e);
+//		
+//		return "common/error";
+//	}
 	
 	
 	

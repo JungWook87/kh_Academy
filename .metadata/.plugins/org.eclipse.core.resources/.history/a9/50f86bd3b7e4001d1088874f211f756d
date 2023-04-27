@@ -1,0 +1,12 @@
+package edu.kh.comm.member.model.dao;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class MyPageDAO {
+	
+	Logger logger = LoggerFactory.getLogger(MyPageDAO.class)
+
+}
