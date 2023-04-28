@@ -20,23 +20,41 @@ public class MyPageDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 
-	public int updateInfo(Member loginMember) {
+	// 회원 정보 수정
+//	public int updateInfo(Member loginMember) {
+//		
+//		return sqlSession.update("myPageMapper.updateInfo", loginMember);
+//	}
+	public int updateInfo(Map<String, Object> paramMap) {
+		return sqlSession.update("myPageMapper.updateInfo", paramMap);
+	}
+
+	// 비밀번호 확인
+	public String pwCheck(int memberNo) {
 		
-		return sqlSession.update("myPageMapper.updateInfo", loginMember);
+		return sqlSession.selectOne("myPageMapper.pwCheck" , memberNo);
 	}
 
-	public String memberPwCheck(int memberNo) {
-		
-		return sqlSession.selectOne("myPageMapper.memberPwCheck" , memberNo);
+	// 비밀번호 변경
+	public int changePw(Map<String, Object> paramMap) {
+		return sqlSession.update("myPageMapper.changePw", paramMap);
 	}
 
-	public int changePw(Member loginMember) {
-		return sqlSession.update("myPageMapper.changePw", loginMember);
+	// 회원 탈퇴
+	public int secession(int memberNo) {
+		return sqlSession.update("myPageMapper.secession", memberNo);
 	}
 
-	public void secession(int memberNo) {
-		sqlSession.update("myPageMapper.secession", memberNo);
+	/** 프로필 이미지 수정
+	 * @param map
+	 * @return result
+	 */
+	public int updateProfile(Map<String, Object> map) {
+
+		return sqlSession.update("myPageMapper.updateProfile", map);
 	}
+
+
 
 
 }

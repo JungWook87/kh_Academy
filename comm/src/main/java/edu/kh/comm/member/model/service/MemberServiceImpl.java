@@ -110,6 +110,9 @@ public class MemberServiceImpl implements  MemberService{
 	}
 
 
+	/** 회원 가입
+	 *
+	 */
 	@Override
 	public int signUp(Member newMember) {
 		

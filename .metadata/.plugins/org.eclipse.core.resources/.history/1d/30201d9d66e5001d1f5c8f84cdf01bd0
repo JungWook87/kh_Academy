@@ -1,0 +1,32 @@
+package edu.kh.comm.member.model.service;
+
+import edu.kh.comm.member.model.vo.Member;
+
+public interface MyPageService {
+
+	/** 회원 정보 수정
+	 * @param loginMember
+	 * @return
+	 */
+	//public abstract int updateInfo(Member loginMember);
+	
+	/** 비밀번호 일치 확인
+	 * @param memberNo
+	 * @param currentPw
+	 * @return
+	 */
+	public abstract int memberPwCheck(int memberNo, String currentPw);
+
+	/** 비밀번호 변경 
+	 * @param loginMember
+	 * @return
+	 */
+	public abstract int changePw(Member loginMember);
+
+	/** 회원 탈퇴
+	 * @param memberNo
+	 */
+	public abstract void secession(int memberNo);
+
+
+}

@@ -65,17 +65,38 @@ public class MemberDAO {
 	public int nicknameDupCheck(String memberNickname) {
 		return sqlSession.selectOne("memberMapper.nicknameDupCheck", memberNickname);
 	}
-
+	
+	
+	/** 회원 가입 DAO
+	 * @param newMember
+	 * @return
+	 */
 	public int signUp(Member newMember) {
+		
+		// INSERT, UPDATE, DELETE 수행하기 위한 메서드 존재함
+		
+		// * insert() / update() / delete() 메서드의 반환값은 int로 고정
+		// -> mapper에서도 resultType이 항상 _int로 고정
+		// -> resultType 생략 가능 (묵시적으로 _int)
+		
 		
 		return sqlSession.insert("memberMapper.signUp", newMember);
 	}
 
+	
+	/** 회원 한명 조회 DAO
+	 * @param memberEmail
+	 * @return
+	 */
 	public Member selectOne(String memberEmail) {
 		
 		return sqlSession.selectOne("memberMapper.selectOne", memberEmail);
 	}
-
+	
+	
+	/** 회원 전체 조회 DAO
+	 * @return
+	 */
 	public List<Member> selectAll() {
 		
 		List<Member> selectAll = new ArrayList<Member>();

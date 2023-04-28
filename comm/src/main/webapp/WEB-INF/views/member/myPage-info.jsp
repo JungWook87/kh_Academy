@@ -47,12 +47,12 @@
 
                     <div class="myPage-row">
                         <label>닉네임</label>
-                        <input type="text" name="memberNickname"  id="updateNickname"  value="${loginMember.memberNickname}" maxlength="10">              
+                        <input type="text" name="updateNickname"  id="memberNickname"  value="${loginMember.memberNickname}" maxlength="10">              
                     </div>
 
                     <div class="myPage-row">
                         <label>전화번호</label>
-                        <input type="text" name="memberTel"  id="updateTel" value="${loginMember.memberTel}" maxlength="11">
+                        <input type="text" name="updateTel"  id="memberTel" value="${loginMember.memberTel}" maxlength="11">
                     </div>
 
                     <!-- 주소 -->			<!--  fn:split(문자열, '구분자')  -->

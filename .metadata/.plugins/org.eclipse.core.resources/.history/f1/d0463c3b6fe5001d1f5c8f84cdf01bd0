@@ -1,0 +1,72 @@
+package edu.kh.comm.member.model.service;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import edu.kh.comm.member.model.dao.MyPageDAO;
+import edu.kh.comm.member.model.vo.Member;
+
+@Service
+public class MyPageServiceImpl implements MyPageService {
+	
+	@Autowired
+	private MyPageDAO dao;
+	
+	@Autowired
+	private BCryptPasswordEncoder bcrypt;
+
+	// 회원 정보 수정
+//	@Override
+//	public int updateInfo(Member loginMember) {
+//		return dao.updateInfo(loginMember);
+//	}
+	@Override
+	public int updateInfo(Map<String, Object> paramMap) {
+		return dao.updateInfo(paramMap);
+	}
+
+
+
+	// 비밀번호 변경
+	@Override
+	public int changePw(Map<String, Object> paramMap) {
+		int result = 0;
+		
+		String DBPw = dao.pwCheck((int)paramMap.get("memberNo"));
+		
+		if(bcrypt.matches((String)paramMap.get("currentPw"), DBPw)) {
+			
+			String newPwBcrypt = bcrypt.encode((String)paramMap.get("newPw"));
+			
+			paramMap.put("newPw", newPwBcrypt);
+			// Map 특성 : 키값이 같은게 있으면 값을 덮어 씌운다
+			
+			result = dao.changePw(paramMap);
+		}
+		
+		return result;
+	}
+
+	// 회원 탈퇴
+	@Override
+	public int secession(Member loginMember) {
+		
+		// 비밀번호 확인
+		String DBPw = dao.pwCheck(loginMember.getMemberNo());
+		
+		if(bcrypt.matches(loginMember.getMemberPw(), DBPw)) {
+			dao.secession(loginMember.getMemberNo());
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

@@ -40,11 +40,29 @@ public interface MemberService {
 	 */
 	public abstract int emailDupCheck(String memberEmail);
 
+	/** 닉네임 중복 검사
+	 * @param memberNickname
+	 * @return
+	 */
 	public abstract int nicknameDupCheck(String memberNickname);
 
+	
+	/** 회원 가입
+	 * @param newMember
+	 * @return
+	 */
 	public abstract int signUp(Member newMember);
 
+	
+	/** 회원 한명 조회
+	 * @param memberEmail
+	 * @return
+	 */
 	public abstract Member selectOne(String memberEmail);
 
+	
+	/** 회원 전체 조회
+	 * @return
+	 */
 	public abstract List<Member> selectAll();
 }

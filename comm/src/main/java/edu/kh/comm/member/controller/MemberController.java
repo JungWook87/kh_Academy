@@ -289,9 +289,24 @@ public class MemberController {
 	
 	
 	@PostMapping("/signUp")
-	public String signUp(@ModelAttribute Member newMember, @RequestParam(value="memberAddress", required=false) String[] address, Model model) {
+	public String signUp(@ModelAttribute Member newMember, 
+			@RequestParam(value="memberAddress", required=false) String[] address, 
+			RedirectAttributes ra) {
+		
+		// 커맨드 객체를 이용해서 입력된 회원 정보를 잘 받옴
+		// 단, 같은 name을 가진 주소가 하나의 문자열로 합쳐서 세팅되어 들어옴
+		// -> 도로명 주소에 "," 기호가 포함되는 경우가 있어서 이를 구분자로 사용할 수 없다
+		
+		// * 커맨드 객체 : 필드에 저장된 값이 입력된 객체
+		
 		
 		String newAddress = String.join(",,", address);
+		// String.join("구분자", 배열)
+		// 배열을 하나의 문자열로 합치는 메서드
+		// 값 중간중간에 구분자가 들어가서 하나의 문자열로 합쳐줌
+		// [a,b,c,] -> join 진행 -> "a,,b,,c"
+		
+		
 		
 		if(newAddress.equals(",,,,")) newAddress = null;
 		
@@ -299,16 +314,19 @@ public class MemberController {
 		
 		int result = service.signUp(newMember);
 		String message = "";
+		String path = null;
 		
 		if(result != 0) {
 			message = "회원 가입이 완료 되었습니다";
+			path = "redirect:/";
 		} else {
 			message = "회원 가입이 실패 되었습니다. 다시 시도해 주세요";
+			path = "redirect:/member/signUp";
 		}
 		
-		model.addAttribute("message", message);
+		ra.addFlashAttribute("message", message);
 	
-		return "common/main";
+		return path;
 	}
 	
 	@ResponseBody
