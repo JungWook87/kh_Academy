@@ -1,0 +1,16 @@
+package edu.kh.comm.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.kh.comm.board.model.service.ReplyService;
+
+// REST (REpresentational State Transfer)
+
+@RestController
+public class ReplyController {
+
+	@Autowired
+	private ReplyService service;
+	
+}

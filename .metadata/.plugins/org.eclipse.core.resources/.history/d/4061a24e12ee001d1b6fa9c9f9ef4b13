@@ -1,0 +1,7 @@
+package edu.kh.comm.board.model.exception;
+
+// 사용자 정의 예외 생성 방법
+
+public class InsertFailException {
+
+}

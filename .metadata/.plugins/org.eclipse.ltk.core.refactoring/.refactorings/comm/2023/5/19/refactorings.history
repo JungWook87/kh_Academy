@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;comm/src/main/resources/mappers/reply-mappler.xml&apos; to &apos;reply-mapper.xml&apos;" description="Rename resource &apos;reply-mappler.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/mappers/reply-mappler.xml" name="reply-mapper.xml" stamp="1683609420761" updateReferences="true"/>
+</session>
