@@ -184,7 +184,7 @@ function deleteReply(replyNo){
 
     if( confirm("정말로 삭제 하시겠습니까?") ){
 
-        // 요청주소 : /community/reply/delete
+        // 요청주소 : /reply/delete
         // 파라미터 : key : "replyNo",  value : 매개변수 replyNo
         // 전달 방식 : "GET"
         // success : 삭제 성공 시 -> "삭제되었습니다"   alert로 출력

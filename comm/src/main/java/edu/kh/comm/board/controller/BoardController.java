@@ -28,7 +28,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.board.model.service.BoardService;
+import edu.kh.comm.board.model.service.ReplyService;
 import edu.kh.comm.board.model.vo.BoardDetail;
+import edu.kh.comm.board.model.vo.Reply;
 import edu.kh.comm.common.Util;
 import edu.kh.comm.member.model.vo.Member;
 
@@ -39,6 +41,9 @@ public class BoardController {
 
 	@Autowired
 	private BoardService service;
+	
+	@Autowired
+	private ReplyService rService;
 	
 	private Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
@@ -107,85 +112,14 @@ public class BoardController {
 		// -> session.getAttribute("loginMember")
 		
 		
-		/*
-		// 상세 조회 성공 시
-		if(detail != null) {
-			
-			int memberNo = -1;
-			
-			// 세션이 있는지 없는지
-			HttpSession session = null;
-			Member loginMember = (Member)session.getAttribute("loginMember");
-			
-			// 세션이 있으면 memberNo 세팅
-			if(loginMember != null) {
-				memberNo = loginMember.getMemberNo();
-			}
-			
-			
-			String readBoardNo = null;
-			
-			// 쿠키가 있는지 없는지
-			if(req.getCookies() != null) { // 쿠키가 있다
-				// 쿠키의 키값에 readBoardNo가 있는지 없는지
-				for(Cookie cookie : req.getCookies()) {
-					if(cookie.getName().equals("readBoardNo")) {
-						readBoardNo = cookie.getValue();
-						break;
-					}
-				}
-				
-				// 쿠키에 readBoardNo가 없어서 새롭게 쿠키 추가
-				if(readBoardNo == null) {
-					Cookie cookie = new Cookie("readBoardNo", detail.getBoardNo() + "/");
-					resp.addCookie(cookie);
-				} else { // 쿠키에 readBoardNo가 있어서 선언한 String readBoardNo에 값이 대입 된 경우
-
-					String[] readBoardNoArr = readBoardNo.split("/");
-					ArrayList<String> readBoardNoList = (ArrayList<String>) Arrays.asList(readBoardNoArr); 
-				}
-				
-			} else { // 쿠키가 없다
-				
-			}
-			
-			// 글쓴이와 현재 클라이언트가 같은지 않은지 
-			// 같지 않으면 -> 조회수 증가
-			if(detail.getMemberNo() != memberNo) {
-				
-				detail.setReadCount(detail.getReadCount() + 1);
-				
-				int readCountResult = service.readCountUpdate(detail);
-			}
-
-			
-
-			
-
-			
-		}
-		
-
-					// 쿠키가 있는지 없는지
-						// 있다면 쿠키 이름이 "readBoardNo"가 있는지?
-							// 없다면 만들기
-							// 있다면 쿠키에 저장된 값 뒤쪽에 현재 조회된 게시글 번호를 추가
-							// -> 단, 기존 쿠키값에 중복되는 번호는 없어야 함
-		
-		// 이미 조회된 데이터 DB와 동기화
-		
-		// + 쿠키 maxAge 1시간
-		
-		*/
-		
-		// ---------------------
-		
-		
 		// 상세 조회 성공 시
 		if(detail != null) {
 			
 			// 댓글 목록 조회
-			
+			List<Reply> rList = rService.replyList(boardNo);
+		
+			model.addAttribute("rList", rList);
+		
 			// 세션이 있는지 없는지
 			// 세션이 있으면 memberNo 세팅
 			Member loginMember = (Member)session.getAttribute("loginMember");
@@ -226,7 +160,7 @@ public class BoardController {
 				if(cookie == null) { // 기본에 "readBoardNo" 이름의 쿠키가 없는 경우
 					cookie = new Cookie("readBoardNo", boardNo+"");
 					result = service.updateReadCount(boardNo); // 조회수 증가 서비스 호출
-				} else { // 기본에 "readBoardNo" 이름의 쿠키가 있떤 경우
+				} else { // 기본에 "readBoardNo" 이름의 쿠키가 있던 경우
 					// "readBoardNo" : "1/2/3/5/30/500" + / + boardNo
 					// -> 쿠키에 저장된 값 뒤쪽에 현재 조회된 게시글 번호 추가
 					
@@ -253,6 +187,7 @@ public class BoardController {
 		}
 		
 		model.addAttribute("detail", detail);
+		
 		
 		return "board/boardDetail";
 	}

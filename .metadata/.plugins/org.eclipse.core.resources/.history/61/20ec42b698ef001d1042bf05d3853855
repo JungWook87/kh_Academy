@@ -1,0 +1,10 @@
+package edu.kh.comm.common.scheduling;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ImageDeleteScheduling {
+	private Logger logger = LoggerFactory.getLogger(ImageDeleteScheduling.class);
+}
