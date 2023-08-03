@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+        .inBox{
+            border: 1px solid black;
+            width: 100px;
+            height : 100px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        input{
+            width: 100px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        .section2{
+            display: flex;
+        }
+        .section3{
+            display: flex;
+        }
+
+        .section3 .inBox{
+            transition-duration: 1s;
+        }
+
+
+        button{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function paint(box, input){
+            box.css("backgroundColor", input.val());
+        }
+    </script>
+    <div class="section1">
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" id="sec1_input">
+        </div>
+    </div>
+    <button type="button" id="btn1">확인</button>
+
+    <script>
+        $('#btn1').on("click", () => {
+            const box1 = $(".section1 > div > div");
+            const input1 = $('#sec1_input');
+            paint(box1, input1);
+            // $(".section1 > div > div").css("backgroundColor", $('#sec1_input').val());
+        })
+    </script>
+
+    <hr>
+
+    <div class = "section2">
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec2_input">
+        </div>
+    </div>
+    <button type="button" id="btn2">확인</button>
+
+    <script>
+        const box2 = $('.section2 .inBox');
+        const input2 = $('.section2 .sec2_input');
+        
+        for(let i = 0; i < box2.length; i++){
+            $("#btn2").on("click", () => {
+                paint($(box2[i]), $(input2[i]));
+            })
+        }
+    </script>
+
+    <hr>
+
+    <div class = "section3">
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+
+        <div class="outBox">
+            <div class="inBox"></div>
+            <input type="text" class="sec3_input">
+        </div>
+    </div>
+
+    <script>
+        const box3 = $(".section3 .inBox");
+        const input3 = $(".section3 .sec3_input");
+
+        for(let i = 0; i < box3.length; i++){
+            $(input3[i]).on("input", (e) => {
+                paint($(box3[i]), $(input3[i]));
+                // $(box3[i]).css("backgroundColor", $(e.target).val());
+                $(e.target).css("borderColor", $(e.target).val());
+            })
+        }
+
+    </script>
+</body>
+</html>
