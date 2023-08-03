@@ -1,0 +1,804 @@
+2023-05-12 09:40:20 [INFO] 초기화 필터 생성
+2023-05-12 09:41:07 [INFO] 초기화 필터 파괴
+2023-05-12 09:41:29 [INFO] 초기화 필터 생성
+2023-05-12 09:41:34 [INFO] 후처리 수행
+2023-05-12 09:41:34 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:41:34 [INFO] 후처리 수행
+2023-05-12 09:41:34 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:41:34 [INFO] 후처리 수행
+2023-05-12 09:41:34 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:41:35 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:41:35 [INFO] 후처리 수행
+2023-05-12 09:41:35 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:47:13 [INFO] 초기화 필터 생성
+2023-05-12 09:47:45 [INFO] 초기화 필터 생성
+2023-05-12 09:47:48 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:47:50 [INFO] 후처리 수행
+2023-05-12 09:47:50 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:47:50 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:47:50 [INFO] ----------------------------- Service End ------------------------------
+2023-05-12 09:47:50 [INFO] 후처리 수행
+2023-05-12 09:47:50 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:00 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:48:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 09:48:00 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:48:01 [INFO] ----------------------------- Service End ------------------------------
+2023-05-12 09:48:01 [INFO] 후처리 수행
+2023-05-12 09:48:01 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:05 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:48:06 [INFO] 후처리 수행
+2023-05-12 09:48:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:06 [INFO] 후처리 수행
+2023-05-12 09:48:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:20 [INFO] 후처리 수행
+2023-05-12 09:48:20 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:20 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:48:20 [INFO] ----------------------------- Service End ------------------------------
+2023-05-12 09:48:20 [INFO] 후처리 수행
+2023-05-12 09:48:20 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:26 [INFO] 로그인 기능 수행됨
+2023-05-12 09:48:26 [INFO] ----------------------------- Service Start ------------------------------
+2023-05-12 09:48:26 [INFO] ----------------------------- Service End ------------------------------
+2023-05-12 09:48:26 [INFO] 후처리 수행
+2023-05-12 09:48:26 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:26 [INFO] 후처리 수행
+2023-05-12 09:48:26 [INFO] View단 처리 완료 후 수행
+2023-05-12 09:48:26 [INFO] 후처리 수행
+2023-05-12 09:48:26 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:10:24 [INFO] 초기화 필터 생성
+2023-05-12 10:10:30 [INFO] 후처리 수행
+2023-05-12 10:10:30 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:10:30 [INFO] 후처리 수행
+2023-05-12 10:10:30 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:10:40 [INFO] 후처리 수행
+2023-05-12 10:10:40 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:10:50 [INFO] 후처리 수행
+2023-05-12 10:10:50 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:10:51 [INFO] 초기화 필터 파괴
+2023-05-12 10:11:09 [INFO] 초기화 필터 생성
+2023-05-12 10:11:13 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+
+2023-05-12 10:11:15 [INFO] 후처리 수행
+2023-05-12 10:11:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:11:15 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+
+2023-05-12 10:11:15 [INFO] 후처리 수행
+2023-05-12 10:11:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:11:25 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+
+2023-05-12 10:11:26 [INFO] 후처리 수행
+2023-05-12 10:11:26 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:11:34 [INFO] 로그인 기능 수행됨
+2023-05-12 10:11:34 [INFO] ---------------------------------
+Strart : MemberServiceImpl - login
+Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+
+2023-05-12 10:11:34 [INFO] 후처리 수행
+2023-05-12 10:11:34 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:11:34 [INFO] 후처리 수행
+2023-05-12 10:11:34 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:12:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+
+2023-05-12 10:12:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:18:52 [INFO] 초기화 필터 생성
+2023-05-12 10:18:56 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-12 10:18:58 [INFO] 후처리 수행
+2023-05-12 10:18:58 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:18:58 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-12 10:18:58 [INFO] 후처리 수행
+2023-05-12 10:18:58 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:19:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 10:19:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:19:06 [INFO] 로그인 기능 수행됨
+2023-05-12 10:19:06 [INFO] ---------------------------------
+Strart : MemberServiceImpl - login
+Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+ip : 0:0:0:0:0:0:0:1
+2023-05-12 10:19:06 [INFO] 후처리 수행
+2023-05-12 10:19:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:19:06 [INFO] 후처리 수행
+2023-05-12 10:19:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:20:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 10:20:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:33:10 [INFO] 초기화 필터 생성
+2023-05-12 10:33:14 [INFO] End : BoardServiceImpl - selectBoardType
+---------------------------------
+
+2023-05-12 10:33:14 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:16 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@ff16fbe, edu.kh.comm.board.model.vo.BoardType@243f7c2f, edu.kh.comm.board.model.vo.BoardType@1944dcce]
+2023-05-12 10:33:16 [INFO] 후처리 수행
+2023-05-12 10:33:16 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:33:17 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:33:17 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:17 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 10:33:17 [INFO] 후처리 수행
+2023-05-12 10:33:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:33:27 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:33:27 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:28 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 10:33:28 [INFO] 후처리 수행
+2023-05-12 10:33:28 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:33:37 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:33:38 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:38 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 10:33:38 [INFO] 후처리 수행
+2023-05-12 10:33:38 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:33:47 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:33:47 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:48 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 10:33:48 [INFO] 후처리 수행
+2023-05-12 10:33:48 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:33:57 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:33:57 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:33:57 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 10:33:57 [INFO] 후처리 수행
+2023-05-12 10:33:57 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 10:34:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 10:34:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 10:34:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:34:04 [INFO] 로그인 기능 수행됨
+2023-05-12 10:34:04 [INFO] End : MemberServiceImpl - login
+---------------------------------
+
+2023-05-12 10:34:04 [INFO] ---------------------------------
+Strart : MemberServiceImpl - login
+Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+ip : 127.0.0.1
+2023-05-12 10:34:04 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=01012341234, memberAddress=06035,,서울 강남구 가로수길 5,,길바닥, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, enrollDate=2023-04-25 09:47:55, secessionFlag=null)
+2023-05-12 10:34:04 [INFO] 후처리 수행
+2023-05-12 10:34:04 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:04 [INFO] 후처리 수행
+2023-05-12 10:34:04 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:08 [INFO] End : BoardServiceImpl - selectBoardList
+---------------------------------
+
+2023-05-12 10:34:08 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardList
+Parameter : [1, 2]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:08 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=0, limit=10, pageSize=10, maxPage=0, startPage=1, endPage=0, prevPage=1, nextPage=0], boardList=[]}
+2023-05-12 10:34:08 [INFO] 후처리 수행
+2023-05-12 10:34:09 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:12 [INFO] End : BoardServiceImpl - selectBoardList
+---------------------------------
+
+2023-05-12 10:34:12 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:12 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=502, limit=10, pageSize=10, maxPage=51, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=1522, boardTitle=개행 테스트, memberNickname=테스트01, createDate=2023-05-10, readCount=0, thumbnail=null), Board(boardNo=1521, boardTitle=123, memberNickname=테스트01, createDate=2023-05-10, readCount=1, thumbnail=/resources/images/board/20230510094839_76788.jpg), Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=/resources/images/board/sample1.png), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=1, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null)]}
+2023-05-12 10:34:12 [INFO] 후처리 수행
+2023-05-12 10:34:12 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:12 [INFO] 후처리 수행
+2023-05-12 10:34:12 [INFO] 후처리 수행
+2023-05-12 10:34:12 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:12 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:14 [INFO] End : BoardServiceImpl - selectBoardList
+---------------------------------
+
+2023-05-12 10:34:14 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardList
+Parameter : [1, 1]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:15 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=1, limit=10, pageSize=10, maxPage=1, startPage=1, endPage=1, prevPage=1, nextPage=1], boardList=[Board(boardNo=501, boardTitle=스프링 테스트, memberNickname=테스트01, createDate=2023-05-01, readCount=2, thumbnail=/resources/images/board/sample1.jpg)]}
+2023-05-12 10:34:15 [INFO] 후처리 수행
+2023-05-12 10:34:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:15 [INFO] End : BoardServiceImpl - selectBoardList
+---------------------------------
+
+2023-05-12 10:34:15 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:15 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=502, limit=10, pageSize=10, maxPage=51, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=1522, boardTitle=개행 테스트, memberNickname=테스트01, createDate=2023-05-10, readCount=0, thumbnail=null), Board(boardNo=1521, boardTitle=123, memberNickname=테스트01, createDate=2023-05-10, readCount=1, thumbnail=/resources/images/board/20230510094839_76788.jpg), Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=/resources/images/board/sample1.png), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=1, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null)]}
+2023-05-12 10:34:15 [INFO] 후처리 수행
+2023-05-12 10:34:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:15 [INFO] 후처리 수행
+2023-05-12 10:34:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:15 [INFO] 후처리 수행
+2023-05-12 10:34:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:16 [INFO] End : BoardServiceImpl - selectBoardDetail
+---------------------------------
+
+2023-05-12 10:34:16 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardDetail
+Parameter : [500]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:16 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@6f45758b
+2023-05-12 10:34:16 [INFO] End : ReplyServiceImpl - replyList
+---------------------------------
+
+2023-05-12 10:34:16 [INFO] ---------------------------------
+Strart : ReplyServiceImpl - replyList
+Parameter : [500]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 10:34:16 [INFO] Return Value : [Reply(replyNo=14, replyContent=등록 테스트, createDate=2023년 05월 10일 10시 26분 53초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0), Reply(replyNo=20, replyContent=123, createDate=2023년 05월 10일 14시 21분 17초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=14), Reply(replyNo=15, replyContent=등록까지 완료, createDate=2023년 05월 10일 10시 27분 00초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0), Reply(replyNo=16, replyContent=개행 테스트
+되나요??
+, createDate=2023년 05월 10일 10시 28분 38초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0)]
+2023-05-12 10:34:16 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:34:17 [INFO] 후처리 수행
+2023-05-12 10:34:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:35:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 10:35:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 10:35:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 10:35:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:38:50 [INFO] 초기화 필터 생성
+2023-05-12 10:42:23 [INFO] 초기화 필터 생성
+2023-05-12 10:42:58 [INFO] 초기화 필터 파괴
+2023-05-12 10:43:09 [INFO] 초기화 필터 생성
+2023-05-12 10:43:12 [INFO] End : BoardServiceImpl - selectBoardType
+---------------------------------
+
+2023-05-12 10:43:12 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:14 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@77c952ac, edu.kh.comm.board.model.vo.BoardType@5f03ad25, edu.kh.comm.board.model.vo.BoardType@35fbc32]
+2023-05-12 10:43:14 [INFO] 후처리 수행
+2023-05-12 10:43:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:43:15 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:43:15 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:15 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:43:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:43:25 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:43:25 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:25 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:43:25 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:43:35 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:43:35 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:35 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:43:35 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:43:45 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:43:45 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:45 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:43:45 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:43:55 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:43:55 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:43:55 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:43:55 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:44:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 10:44:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 10:44:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 10:44:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 10:44:05 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:44:05 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:44:05 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:44:05 [INFO] View단 처리 완료 후 수행
+2023-05-12 10:44:15 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 10:44:15 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 10:44:15 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+### The error may exist in /mappers/member-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT MEMBER_NO , MEMBER_EMAIL , MEMBER_NICK    FROM MEMBER_S;
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+2023-05-12 10:44:15 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:11:41 [INFO] 초기화 필터 생성
+2023-05-12 11:11:45 [INFO] End : BoardServiceImpl - selectBoardType
+---------------------------------
+
+2023-05-12 11:11:45 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:11:47 [INFO] Running Time : 2155ms
+2023-05-12 11:11:47 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@681ff221, edu.kh.comm.board.model.vo.BoardType@556791b8, edu.kh.comm.board.model.vo.BoardType@225e2920]
+2023-05-12 11:11:47 [INFO] 후처리 수행
+2023-05-12 11:11:48 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:11:50 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:11:50 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:11:50 [INFO] Running Time : 12ms
+2023-05-12 11:11:50 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:11:50 [INFO] 후처리 수행
+2023-05-12 11:11:50 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:12:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:12:00 [INFO] Running Time : 12ms
+2023-05-12 11:12:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:12:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:12:01 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:12:01 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:12:01 [INFO] Running Time : 12ms
+2023-05-12 11:12:01 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:12:01 [INFO] 후처리 수행
+2023-05-12 11:12:01 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:10 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:12:10 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:12:10 [INFO] Running Time : 7ms
+2023-05-12 11:12:10 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:12:10 [INFO] 후처리 수행
+2023-05-12 11:12:10 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:14 [INFO] End : MemberServiceImpl - selectOne
+---------------------------------
+
+2023-05-12 11:12:14 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectOne
+Parameter : [test02@naver.com	]
+ip : 127.0.0.1
+2023-05-12 11:12:14 [INFO] Running Time : 16ms
+2023-05-12 11:12:14 [INFO] Return Value : null
+2023-05-12 11:12:14 [INFO] 후처리 수행
+2023-05-12 11:12:14 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:17 [INFO] End : MemberServiceImpl - selectOne
+---------------------------------
+
+2023-05-12 11:12:17 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectOne
+Parameter : [test02@naver.com]
+ip : 127.0.0.1
+2023-05-12 11:12:17 [INFO] Running Time : 8ms
+2023-05-12 11:12:17 [INFO] Return Value : Member(memberNo=0, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=01023452345, memberAddress=null, profileImage=null, enrollDate=2023년 04월 26일, secessionFlag=null)
+2023-05-12 11:12:17 [INFO] 후처리 수행
+2023-05-12 11:12:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:20 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:12:20 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:12:20 [INFO] Running Time : 11ms
+2023-05-12 11:12:20 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:12:20 [INFO] 후처리 수행
+2023-05-12 11:12:20 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:30 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:12:30 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:12:30 [INFO] Running Time : 12ms
+2023-05-12 11:12:30 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:12:30 [INFO] 후처리 수행
+2023-05-12 11:12:30 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:40 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:12:40 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:12:40 [INFO] Running Time : 9ms
+2023-05-12 11:12:40 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:12:40 [INFO] 후처리 수행
+2023-05-12 11:12:40 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:49 [INFO] 로그인 기능 수행됨
+2023-05-12 11:12:49 [INFO] End : MemberServiceImpl - login
+---------------------------------
+
+2023-05-12 11:12:49 [INFO] ---------------------------------
+Strart : MemberServiceImpl - login
+Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+ip : 127.0.0.1
+2023-05-12 11:12:49 [INFO] Running Time : 94ms
+2023-05-12 11:12:49 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=01012341234, memberAddress=06035,,서울 강남구 가로수길 5,,길바닥, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, enrollDate=2023-04-25 09:47:55, secessionFlag=null)
+2023-05-12 11:12:49 [INFO] 후처리 수행
+2023-05-12 11:12:49 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:49 [INFO] 후처리 수행
+2023-05-12 11:12:49 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:12:59 [INFO] End : BoardServiceImpl - selectBoardList
+---------------------------------
+
+2023-05-12 11:12:59 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 11:13:00 [INFO] Running Time : 86ms
+2023-05-12 11:13:00 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=502, limit=10, pageSize=10, maxPage=51, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=1522, boardTitle=개행 테스트, memberNickname=테스트01, createDate=2023-05-10, readCount=0, thumbnail=null), Board(boardNo=1521, boardTitle=123, memberNickname=테스트01, createDate=2023-05-10, readCount=1, thumbnail=/resources/images/board/20230510094839_76788.jpg), Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=/resources/images/board/sample1.png), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=2, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=1, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트01, createDate=2023-03-27, readCount=0, thumbnail=null)]}
+2023-05-12 11:13:00 [INFO] 후처리 수행
+2023-05-12 11:13:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:13:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:13:00 [INFO] Running Time : 5ms
+2023-05-12 11:13:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:13:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:13:00 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:00 [INFO] 후처리 수행
+2023-05-12 11:13:00 [INFO] 후처리 수행
+2023-05-12 11:13:00 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:00 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] End : BoardServiceImpl - selectBoardDetail
+---------------------------------
+
+2023-05-12 11:13:13 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardDetail
+Parameter : [500]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 11:13:13 [INFO] Running Time : 33ms
+2023-05-12 11:13:13 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@ea2149
+2023-05-12 11:13:13 [INFO] End : ReplyServiceImpl - replyList
+---------------------------------
+
+2023-05-12 11:13:13 [INFO] ---------------------------------
+Strart : ReplyServiceImpl - replyList
+Parameter : [500]
+ip : 127.0.0.1( email : test01@naver.com)
+2023-05-12 11:13:13 [INFO] Running Time : 6ms
+2023-05-12 11:13:13 [INFO] Return Value : [Reply(replyNo=14, replyContent=등록 테스트, createDate=2023년 05월 10일 10시 26분 53초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0), Reply(replyNo=20, replyContent=123, createDate=2023년 05월 10일 14시 21분 17초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=14), Reply(replyNo=15, replyContent=등록까지 완료, createDate=2023년 05월 10일 10시 27분 00초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0), Reply(replyNo=16, replyContent=개행 테스트
+되나요??
+, createDate=2023년 05월 10일 10시 28분 38초, boardNo=500, memberNo=1, memberNickname=테스트01, profileImage=/resources/images/memberProfile/20230428141205_50868.jpg, parentReplyNo=0)]
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:13:13 [INFO] 후처리 수행
+2023-05-12 11:13:13 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:14:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:14:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:14:00 [INFO] Running Time : 6ms
+2023-05-12 11:14:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:14:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:17:00 [INFO] 초기화 필터 생성
+2023-05-12 11:17:04 [INFO] End : BoardServiceImpl - selectBoardType
+---------------------------------
+
+2023-05-12 11:17:04 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:06 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@5e66b00c, edu.kh.comm.board.model.vo.BoardType@bd694a2, edu.kh.comm.board.model.vo.BoardType@4d85aea8]
+2023-05-12 11:17:06 [INFO] Running Time : 2168ms
+2023-05-12 11:17:06 [INFO] 후처리 수행
+2023-05-12 11:17:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:06 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:06 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:06 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:06 [INFO] Running Time : 10ms
+2023-05-12 11:17:06 [INFO] 후처리 수행
+2023-05-12 11:17:06 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:16 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:16 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:17 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:17 [INFO] Running Time : 15ms
+2023-05-12 11:17:17 [INFO] 후처리 수행
+2023-05-12 11:17:17 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:26 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:26 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:27 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:27 [INFO] Running Time : 11ms
+2023-05-12 11:17:27 [INFO] 후처리 수행
+2023-05-12 11:17:27 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:36 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:36 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:37 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:37 [INFO] Running Time : 14ms
+2023-05-12 11:17:37 [INFO] 후처리 수행
+2023-05-12 11:17:37 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:46 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:46 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:47 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:47 [INFO] Running Time : 11ms
+2023-05-12 11:17:47 [INFO] 후처리 수행
+2023-05-12 11:17:47 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:17:56 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:17:56 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:17:56 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:17:56 [INFO] Running Time : 11ms
+2023-05-12 11:17:57 [INFO] 후처리 수행
+2023-05-12 11:17:57 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:18:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:18:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:18:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:18:00 [INFO] Running Time : 13ms
+2023-05-12 11:18:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:18:06 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:18:07 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:18:07 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:18:07 [INFO] Running Time : 9ms
+2023-05-12 11:18:07 [INFO] 후처리 수행
+2023-05-12 11:18:07 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:18:24 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:18:24 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:18:24 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:18:24 [INFO] Running Time : 10ms
+2023-05-12 11:18:25 [INFO] 후처리 수행
+2023-05-12 11:18:25 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:19:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:19:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:19:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:19:00 [INFO] Running Time : 6ms
+2023-05-12 11:19:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:19:25 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:19:25 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:19:25 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:19:25 [INFO] Running Time : 6ms
+2023-05-12 11:19:25 [INFO] 후처리 수행
+2023-05-12 11:19:25 [INFO] View단 처리 완료 후 수행
+2023-05-12 11:20:00 [INFO] End : BoardServiceImpl - selectDBList
+---------------------------------
+
+2023-05-12 11:20:00 [INFO] ---------------------------------
+Strart : BoardServiceImpl - selectDBList
+Parameter : []
+[스케줄러 동작]
+2023-05-12 11:20:00 [INFO] Return Value : [/resources/images/board/sample1.png, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230510094839_76788.jpg, /resources/images/board/20230510094839_74706.png, /resources/images/board/20230510094839_89955.png, /resources/images/board/20230510094839_48908.png, /resources/images/board/20230510094839_14533.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg]
+2023-05-12 11:20:00 [INFO] Running Time : 9ms
+2023-05-12 11:20:00 [INFO] -------- 서버 이미지 삭제 완료 --------------
+2023-05-12 11:20:25 [INFO] End : MemberServiceImpl - selectAll
+---------------------------------
+
+2023-05-12 11:20:25 [INFO] ---------------------------------
+Strart : MemberServiceImpl - selectAll
+Parameter : []
+ip : 127.0.0.1
+2023-05-12 11:20:25 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트01, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=test04@naver.com, memberPw=null, memberNickname=테스트4, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=test05@naver.com, memberPw=null, memberNickname=테스트5, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=6, memberEmail=test06@naver.com, memberPw=null, memberNickname=테스트6, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=7, memberEmail=test07@naver.com, memberPw=null, memberNickname=테스트7, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=8, memberEmail=test08@naver.com, memberPw=null, memberNickname=테스트8, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=9, memberEmail=test09@naver.com, memberPw=null, memberNickname=테스트9, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=10, memberEmail=test10@naver.com, memberPw=null, memberNickname=테스트10, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-12 11:20:25 [INFO] Running Time : 8ms
+2023-05-12 11:20:25 [INFO] 후처리 수행
+2023-05-12 11:20:25 [INFO] View단 처리 완료 후 수행

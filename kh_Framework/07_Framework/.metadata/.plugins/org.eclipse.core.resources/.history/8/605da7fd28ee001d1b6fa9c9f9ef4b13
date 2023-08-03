@@ -1,0 +1,11 @@
+package edu.kh.comm.board.model.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.kh.comm.board.model.dao.ReplyDAO;
+
+public class ReplyServiceImpl implements ReplyService {
+	
+	@Autowired
+	private ReplyDAO dao;
+}
