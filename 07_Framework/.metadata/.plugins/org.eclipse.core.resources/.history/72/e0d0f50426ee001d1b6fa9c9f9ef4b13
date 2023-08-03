@@ -1,0 +1,18 @@
+package edu.kh.comm.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.kh.comm.board.model.service.ReplyService;
+
+// REST (REpresentational State Transfer) : 
+// - 자원을 이름으로 구분(REpresentational)하여
+// 자원의 상태를 주고 받는 것
+
+@RestController
+public class ReplyController {
+
+	@Autowired
+	private ReplyService service;
+	
+}

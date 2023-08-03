@@ -1,0 +1,9 @@
+package edu.kh.comm.common.aop;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class AfterReturningAspect {
+
+	private Logger logger = LoggerFactory.getLogger(AfterReturningAspect.class);
+}
