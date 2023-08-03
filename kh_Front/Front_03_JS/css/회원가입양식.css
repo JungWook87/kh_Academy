@@ -1,0 +1,7 @@
+.idConfirm, .pwConfirm, .pw2Confirm, .nameConfirm, .telConfirm, .emailConfirm{
+    color: green;
+}
+
+.idError, .pwError, .pw2Error, .nameError, .telError, .emailError{
+    color: red;
+}

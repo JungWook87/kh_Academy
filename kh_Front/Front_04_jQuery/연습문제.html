@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body > div {
+            margin-left: 100px;
+            margin-top: 100px;
+            display: flex;
+        }
+
+        body > div > div{
+            margin-left: 10px;
+        }
+
+        body > div > div:last-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+       
+        .inBox{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .input{
+            width: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+        <div>
+            <div class="inBox"></div>
+            <input type="text" class="input">
+        </div>
+
+        <div>
+            <button type="button" id="btn1">리셋</button>
+        </div>
+    </div>
+
+    <script>
+        $(".input").on("input", function() {
+            $(this).prev().css("backgroundColor", $(this).val());
+        });
+
+        $("#btn1").on("click",() => {
+            $('.inBox').css("backgroundColor", "");
+            $(".input").val("");
+        });
+
+
+    </script>
+
+</body>
+</html>
